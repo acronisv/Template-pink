@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../build/css/template.css">
+</head>
+<body>
+    <svg style="display: none;">
+        <symbol viewBox="0 0 48 48" id="crop" width="100%" height="100%">
+            <path fill="none" d="M0,0h48v48H0V0z"></path>
+            <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"></path>
+        </symbol>
+        <symbol viewBox="0 0 48 48" id="fill" width="100%" height="100%">
+            <path fill="none" d="M0,0h48v48H0V0z"></path>
+            <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"></path>
+            <rect y="40" width="48" height="3"></rect>
+        </symbol>
+        <symbol viewBox="-35.422 -7.96 31.92 31.92" id="contrast" width="100%" height="100%">
+            <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"></path>
+            <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"></path>
+        </symbol>
+        <symbol viewBox="0 0 17.5 14.663" id="icon-twitter" width="100%" height="100%">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151
+                    c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86
+                    c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0
+                    c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881
+                    c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461
+                    c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"></path>
+        </symbol>
+        <symbol viewBox="0 0 8.673 18.944" id="icon-facebook" width="100%" height="100%">
+            <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"></path>
+        </symbol>
+        <symbol viewBox="0 0 14.64 13.96" id="icon-youtube" width="100%" height="100%">
+            <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"></path>
+        </symbol>
+    </svg>
+    <header>
+        <nav class="main-nav">
+            <button class="main-nav__toggle-menu-button"></button>
+            <ul class="main-nav__list">
+                <li class="main-nav__list-item main-nav__list-item--logo"><a class="main-nav__link" href="/"><img src="/src/img/logo.png" alt="Pink"></a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="/">Главная</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="photos.html">Фотографии</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="contest.html">Конкурс</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="/">HTML Academy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-main">
+        <section class="intro">
+            <div class="intro__wrap intro__wrap--no-index">
+                <h1 class="intro__header">Фотографии пользователей</h1>
+            </div>
+        </section>
+        <section class="photo-content">
+            <div class="photo-content__intro">
+                <p class="photo-content__text">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+            </div>
+            <div class="photo-content__main-post">
+                <img src="/src/img/panorama-mobile.png" alt="Панорама дня">
+                <article class="photo-content__comment-wrap user-post">
+                    <h4 class="user-post__header">Анна<span class="user-post__time"> (5 минут назад)</span></h4>
+                    <p class="user-post__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                    <footer class="user-post__footer">
+                        <p class="user-post__row">Нравится: <span class="user-post__counter">215</span></p>
+                    </footer>
+                </article>
+            </div>
+            <div class="photo-content__gallery">
+                <div class="photo-content__gallery-item">
+                    <img class="photo-content__image" src="/src/img/gallery-img1.png" alt="Автомобиль">
+                    <article class="photo-content__comment-wrap user-post">
+                        <h4 class="user-post__header">Левон<span class="user-post__time"> (5 часов назад)</span></h4>
+                        <p class="user-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                        <footer class="user-post__footer">
+                            <p class="user-post__row">Нравится: <span class="user-post__counter">215</span></p>
+                        </footer>
+                    </article>
+                </div>
+                <div class="photo-content__gallery-item">
+                    <img class="photo-content__image" src="/src/img/gallery-img2.png" alt="Инструменты">
+                    <article class="photo-content__comment-wrap user-post">
+                        <h4 class="user-post__header">Антон<span class="user-post__time"> (12 часов назад)</span></h4>
+                        <p class="user-post__text">Соседи будут рады</p>
+                        <footer class="user-post__footer">
+                            <p class="user-post__row">Нравится: <span class="user-post__counter">215</span></p>
+                        </footer>
+                    </article>
+                </div>
+                <div class="photo-content__gallery-item">
+                    <img class="photo-content__image" src="/src/img/gallery-img3.png" alt="Здание">
+                    <article class="photo-content__comment-wrap user-post">
+                        <h4 class="user-post__header">Борис<span class="user-post__time"> (20 часов назад)</span></h4>
+                        <p class="user-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                        <footer class="user-post__footer">
+                            <p class="user-post__row">Нравится: <span class="user-post__counter">215</span></p>
+                        </footer>
+                    </article>
+                </div>
+                <div class="photo-content__gallery-item">
+                    <img class="photo-content__image" src="/src/img/gallery-img4.png" alt="Бахча">
+                    <article class="photo-content__comment-wrap user-post">
+                        <h4 class="user-post__header">Сергей<span class="user-post__time"> (25 часов назад)</span></h4>
+                        <p class="user-post__text">Самая кубанская в мире!</p>
+                        <footer class="user-post__footer">
+                            <p class="user-post__row">Нравится: <span class="user-post__counter">215</span></p>
+                        </footer>
+                    </article>
+                </div>
+                <div class="photo-content__gallery-item">
+                    <img class="photo-content__image" src="/src/img/gallery-img5.png" alt="Природа">
+                    <article class="photo-content__comment-wrap user-post">
+                        <h4 class="user-post__header">Максим<span class="user-post__time">(40 часов назад)</span></h4>
+                        <p class="user-post__text">Где снег-то?</p>
+                        <footer class="user-post__footer">
+                            <p class="user-post__row">Нравится: <span class="user-post__counter">215</span></p>
+                        </footer>
+                    </article>
+                </div>
+                <div class="photo-content__gallery-item">
+                    <img class="photo-content__image" src="/src/img/gallery-img6.png" alt="Полет">
+                    <article class="photo-content__comment-wrap user-post">
+                        <h4 class="user-post__header">Надежда<span class="user-post__time">(45 часов назад)</span></h4>
+                        <p class="user-post__text">Всем GM и взаимные лайки</p>
+                        <footer class="user-post__footer">
+                            <p class="user-post__row">Нравится: <span class="user-post__counter">215</span></p>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="photo-upload">
+            <p class="photo-upload__text">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+            <div class="photo-upload__area">
+                <img class="photo-upload__image" src="/src/img/upload-photo.png" alt="Загрузка фотографий">
+                <div class="photo-upload__controls">
+                    <div class="photo-upload__snaps">
+                        <button class="photo-upload__snap photo-upload__snap--cropp">
+                            <svg class="crop" width="49" height="48"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop"></use></svg>
+                        </button>
+                        <button class="photo-upload__snap photo-upload__snap--fill">
+                            <svg class="fill" width="49" height="48"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill"></use></svg>
+                        </button>
+                        <button class="photo-upload__snap photo-upload__span--contrast">
+                            <svg class="contrast" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#contrast"></use></svg>
+                        </button>
+                    </div>
+                    <div class="photo-upload__slides">
+                        <input class="photo-upload__slide" type="range" min="0" max="100" step="1">
+                    </div>
+                </div>
+                <div class="photo-upload__buttons">
+                    <input class="photo-upload__button" type="submit" value="Запостить">
+                    <input class="photo-upload__button" type="submit" value="Отмена">
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="contacts contacts--no-index">
+        <div class="contacts__logo">
+            <img  class="contacts__logo-img" src="/src/img/footer-logo.png" alt="Logo">
+        </div>
+        <div class="contacts__social social-icons">
+            <ul class="social-icons__list">
+                <li class="social-icons__item">
+                    <a class="social-icons__link" href="#">
+                        <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
+                    </a>
+                </li>
+                <li class="social-icons__item">
+                    <a class="social-icons__link" href="#">
+                        <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg>
+                    </a>
+                        
+                </li>
+                <li class="social-icons__item">
+                    <a class="social-icons__link" href="#">
+                        <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a href="#" class="contacts__copyright">Разработано</a>
+    </footer>
+    <script src='../build/js/main.js'></script>
+</body>
+</html>
