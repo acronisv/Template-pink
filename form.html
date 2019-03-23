@@ -60,6 +60,7 @@
             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
         </symbol>
     </svg>
+    
     <header>
         <nav class="main-nav">
             <button class="main-nav__toggle-menu-button"></button>
@@ -69,13 +70,13 @@
                         <svg class="main-nav__logo" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink"></use></svg>
                     </a>
                 </li>
-                <li class="main-nav__list-item main-nav__list-item--active">
+                <li class="main-nav__list-item">
                     <a class="main-nav__link" href="/">Главная</a>
                 </li>
                 <li class="main-nav__list-item">
                     <a class="main-nav__link" href="photos.html">Фотографии</a>
                 </li>
-                <li class="main-nav__list-item">
+                <li class="main-nav__list-item main-nav__list-item--active">
                     <a class="main-nav__link" href="form.html">Конкурс</a>
                 </li>
                 <li class="main-nav__list-item">
@@ -86,97 +87,127 @@
     </header>
     <main class="page-main">
         <section class="intro">
-            <div class="intro__wrap">
-                <div class="intro__text">
-                    <h1 class="intro__header"></h1>
-                    <div class="intro__app-download app-stores">
-                        <a class="app-stores__download-button" href="/">Скачать приложение</a>
-                        <div class="app-stores__icons">
-                            <div class="app-stores__icon app-stores__icon--apple">
-                                <img src="/src/img/apple-logo.png" alt="App store">
-                            </div>
-                            <div class="app-stores__icon app-stores__icon--android">
-                                <img src="/src/img/android-logo.png" alt="Play market">
-                            </div>
-                            <div class="app-stores__icon app-stores__icon--microsoft">
-                                <img src="/src/img/microsoft-logo.png" alt="Microsoft store">
-                            </div>
+            <div class="intro__wrap intro__wrap--no-index">
+                <h1 class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+            </div>
+        </section>
+        <section class="review">
+            <div class="review__intro">
+                <p class="review__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+            </div>
+            <form class="review__form">
+                <fieldset class="review__section review__section--introduce">
+                    <div class="review__form-wrapper">
+                        <div class="review__line-wrapper">
+                            <label class="review__label" for="surname">Фамилия</label>
+                            <input class="review__input" type="text" required="" id="surname" name="surname" placeholder="Укажите фамилию *">
                         </div>
-                        <p class="app-stores__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+                        <div class="review__line-wrapper">
+                            <label class="review__label" for="first-name">Имя</label>
+                            <input class="review__input" type="text" required="" id="first-name" name="first-name" placeholder="Введите ваше имя *">
+                        </div>
+                        <div class="review__line-wrapper">
+                            <label class="review__label" for="middle-name">Отчество</label>
+                            <input class="review__input" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="offer">
-            <h2 class="offer__header">
-                <span class="offer__slogan">Устали от серости мегаполиса?</span>
-                <span class="offer__slogan">Нам есть, что вам<br>предложить!</span>
-            </h2>
-            <div class="offer__functions features">
-                <div class="features__item">
-                    <div class="features__heading">Поднимает настроение</div>
-                    <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                </div>
-                <div class="features__item">
-                    <div class="features__heading">Меняет мир вокруг</div>
-                    <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                </div>
-                <div class="features__item">
-                    <div class="features__heading">Заводит новых друзей</div>
-                    <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                </div>
-            </div>
-            <div class="offer__pics">
-                <div class="offer__pic offer__pic--gray"></div>
-                <div class="offer__pic offer__pic--pink"></div>
-                <div class="offer__pic offer__pic--pink-text"></div>
-            </div>
-        </section>
-        <section class="reviews">
-            <div class="reviews__item">
-                <p class="reviews__name">Николай Петров</p>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </div>
-        </section>
-        <section class="price">
-            <table class="price__table price-table">
-                <tr class="price-table__head">
-                    <th></th>
-                    <th>База</th>
-                    <th>Стандарт</th>
-                    <th>Анлим</th>
-                </tr>
-                <tr class="price-table__row">
-                    <td class="price-table__cell">Розовый фильтр</td>
-                    <td class="price-table__cell">+</td>
-                    <td class="price-table__cell">+</td>
-                    <td class="price-table__cell">+</td>
-                </tr>
-                <tr class="price-table__row">
-                    <td class="price-table__cell">Смайлики</td>
-                    <td class="price-table__cell"></td>
-                    <td class="price-table__cell">3</td>
-                    <td class="price-table__cell">4</td>
-                </tr>
-                <tr class="price-table__row">
-                    <td class="price-table__cell">Комментарии</td>
-                    <td class="price-table__cell">-</td>
-                    <td class="price-table__cell">-</td>
-                    <td class="price-table__cell">+</td>
-                </tr>  
-            </table>
+                </fieldset>
+                <fieldset class="review__section review__section--impression">
+                    <legend class="review__section-title">Ваши безбашенные достижения в путешествии:</legend>
+                    <div class="review__form-wrapper">
+                        <div class="review__line-wrapper">
+                            <input class="review__input" type="checkbox" checked id="selfie" name="selfie">
+                            <label class="review__label" for="selfie">Сделать селфи с акулой</label>
+                        </div>
+                        <div class="review__line-wrapper">
+                            <input class="review__input" type="checkbox" checked id="beach" name="beach">
+                            <label class="review__label" for="beach">Обгорел на пляже</label>
+                        </div>
+                        <div class="review__line-wrapper">
+                            <input class="review__input" type="checkbox" id="norris" name="norris">
+                            <label class="review__label" for="norris">Видел Чака Норриса</label>
+                        </div>
+                        <div class="review__line-wrapper">
+                            <input class="review__input" type="checkbox" id="souvenir" name="souvenir">
+                            <label class="review__label" for="souvenir">Накупил сувениров</label>
+                        </div>
+                        <div class="review__line-wrapper">
+                            <input class="review__input" type="checkbox" checked id="tower" name="tower">
+                            <label class="review__label" for="tower">Удержал башню</label>
+                        </div>
+                        <div class="review__line-wrapper">
+                            <input class="review__input" type="checkbox" id="hotel" name="hotel">
+                            <label class="review__label" for="hotel">Разгромил отел</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="review__section review__section--contact-info">
+                    <div class="review__form-wrapper">
+                        <div class="review__line-wrapper">
+                            <label class="review__label" for="phone">Номер телефона</label>
+                            <input class="review__input" type="tel" required="" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                        </div>
+                        <div class="review__line-wrapper">
+                            <label class="review__label" for="email">Адрес почты</label>
+                            <input class="review__input" type="email" required="" id="email" name="email" placeholder="Введите почту *">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="review__section review__section--app-info">
+                    <legend class="review__section-title">С каким приложением путешествовали?</legend>
+                    <div class="review__form-wrapper">
+                        <div class="review__line-wrapper">
+                            <input class="review__input" type="radio" checked id="ios" name="ios">
+                            <label class="review__label" for="ios">Pink для iOS</label>
+                        </div>
+                        <div class="review__line-wrapper">
+                            <input class="review__input" type="radio" id="android" name="android">
+                            <label class="review__label" for="android">Pink на Android</label>
+                        </div>
+                        <div class="review__line-wrapper">
+                            <input class="review__input" type="radio" id="windows" name="windows">
+                            <label class="review__label" for="windows">Windows Phone</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="review__section review__section--emotions">
+                    <div class="review__form-wrapper">
+                        <p class="review__section-title">Опишите свои эмоции</p>
+                        <textarea class="review__textarea" name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
+                    </div>
+                </fieldset>
+                <input class="review__button-submit" type="submit" value="Отправить форму">
+                <p class="review__note"><span class="review__required">*</span> — обязательные поля</p>
+            </form>
         </section>
     </main>
-    <footer class="contacts">
-        <h2 class="contacts__main-header">Остались вопросы?<br>Свяжитесь с нами!</h2>
-        <p class="contacts__header">Звоните:</p>
-        <a class="contacts__text" href="tel:+78125556666">+7(812)555-66-66</a>
-        <p class="contacts__header">Пишите:</p>
-        <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        <p class="contacts__header">Приезжайте в гости:</p>
-        <address class="contacts__text">ул.Большая<br>Конюшенная, 19/8</address>
-        <div class="contacts__map">
-            <img src="/src/img/map-mobile.png" alt="Карта">
+    <footer class="contacts contacts--no-index">
+        <div class="contacts__logo">
+                <svg class="contacts__logo-footer"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-footer"></use></svg>
+        </div>
+        <div class="contacts__social social-icons">
+            <ul class="social-icons__list">
+                <li class="social-icons__item">
+                    <a class="social-icons__link" href="#">
+                        <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
+                    </a>
+                </li>
+                <li class="social-icons__item">
+                    <a class="social-icons__link" href="#">
+                        <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg>
+                    </a>
+                        
+                </li>
+                <li class="social-icons__item">
+                    <a class="social-icons__link" href="#">
+                        <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts__copyright">
+            <a href="#" class="contacts__copyright-link">Разработано</a>
+            <svg class="contacts__copyright-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg>
         </div>
     </footer>
     <script src='../build/js/main.js'></script>
