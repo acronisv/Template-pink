@@ -1,0 +1,37 @@
+.features {
+	&__item {
+		padding-bottom: 33px;
+	}
+
+	&__heading {
+		font-weight: bold;
+		font-size: 19px;
+		text-align: center;
+		padding-bottom: 13px;
+	}
+
+	&__text{
+		text-align: center;
+		line-height: 24px;
+		margin: 0;
+	}
+}
+
+@media (min-width: 660px) {
+	.features {
+		background-position: 0 0;
+		flex-basis: 50%;
+		order: 1;
+		box-sizing: border-box;
+
+		&__heading {
+			text-align: left;
+		}
+		&__text {
+			text-align: left;
+		}
+		&__item {
+			padding: 21px 0 16px 0;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+.photo-content {
+	&__intro {
+		padding: 0 20px;
+	}
+
+	&__text {
+		margin: 0;
+		padding: 47px 0;
+		text-align: center;
+		font-size: 15px;
+		line-height: 30px;
+		font-weight: normal;
+
+		&--bottom {
+			padding: 23px 0;
+		}
+	}
+
+	&__main-image {
+		position: relative;
+		max-width: 320px;
+		margin: 0 auto;
+		&::before {
+			position: absolute;
+			content: 'Панорама дня';
+			background: #d22856;
+			top: 0;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 12px;
+			text-align: center;
+			padding-top: 12px;
+			right: 18px;
+			width: 140px;
+			height: 25px;
+		}
+	}
+
+	&__image {
+		display: block;
+		margin: 0 auto;
+	}
+
+	&__gallery-item {
+		
+	}
+}

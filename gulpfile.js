@@ -11,7 +11,7 @@ const norm = [
 ];
 
 const sassFiles = [
-	'./src/css/**/*.scss'
+	'./src/css/*.scss'
 ];
 
 const jsFiles = [

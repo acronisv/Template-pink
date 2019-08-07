@@ -1,0 +1,80 @@
+.app-stores {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 280px;
+	margin: auto;
+
+	&__download-button {
+		font-size: 21px;
+		color: #ffffff;
+		padding: 12px 0;
+		text-decoration: none;
+		border: 3px solid #ffffff;
+		border-radius: 40px;
+		box-sizing: border-box;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 35px;
+
+		&:hover {
+			background: #ffffff;
+			color: #d22856;
+		}
+
+		&:active {
+			color: #f1becc;
+		}
+	}
+
+	&__icon {
+		display: flex;
+		align-items: center;
+	}
+
+	&__icons {
+		display: flex;
+		width: 100%;
+		justify-content: space-evenly;
+		margin-bottom: 6px;
+	}
+
+	&__text {
+		color: #c3c5c8;
+		text-align: center;
+		line-height: 24px;
+	}
+
+	&__header {
+		display: none;
+	}
+}
+
+
+
+@media (min-width: 660px) {
+	.app-stores {
+		margin: 0;
+		width: 300px;
+		&__header {
+			display: block;
+			color: #fff;
+			font-size: 40px;
+			font-weight: 400;
+			padding: 60px 36px 2px;
+			text-align: center;
+		}
+
+		&__download-button {
+			margin-bottom: 49px;
+		}
+
+		&__icons {
+			margin-bottom: 17px;
+		}
+		
+		&__text{
+			font-size: 18px;
+		}
+	}
+}

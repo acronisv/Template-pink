@@ -1,0 +1,30 @@
+.research {
+	display: none;
+}
+
+@media (min-width: 660px) {
+	.research {
+		@include container-tablet;
+		background-image: url('/src/img/timer.png');
+		background-repeat: no-repeat;
+		background-position: 0 100%;
+		display: flex;
+		padding-bottom: 30px;
+
+		&__wrap {
+			flex-basis: 50%;
+			margin-left: auto;
+		}
+
+		&__heading {
+			font-size: 30px;
+			margin: 96px 0 16px;
+			width: 170px;
+		}
+
+		&__text {
+			line-height: 23px;
+			margin-bottom: 16px;
+		}
+	}
+}
