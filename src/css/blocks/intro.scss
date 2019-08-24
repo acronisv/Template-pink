@@ -11,7 +11,6 @@
 
 	&__header {
 		margin: 0;
-		display: none;
 	}
 	
 	&__text {
@@ -43,13 +42,22 @@
 	.intro {
 		&__wrap {
 			background-image: url('/src/img/back-tablet.png');
-			height: 617px;
+			height: 328px;
 		} 
+
 		&__text {
 			@include container-tablet;
 			position: relative;
 			background-color: transparent;
 			padding: 0;
+		}
+	}
+
+	.intro__wrap--no-index {
+		.intro__header {
+			padding-top: 72px;
+			max-width: 500px;
+			font-size: 51px;
 		}
 	}
 }

@@ -111,3 +111,62 @@
 		}
 	}
 }
+.photo-upload__controls--tablet {
+	display: none;
+}
+
+@media (min-width: 660px) {
+	.photo-upload {
+		&__text {
+			font-size: 19px;
+			padding: 51px 0 67px;
+		}
+
+		&__area {
+			display: flex;
+			max-width: 620px;
+			padding: 0 20px;	
+			justify-content: space-between;
+			margin: 0 auto;
+		}
+
+		&__image {
+			margin: 56px 0;
+		}
+	}
+	.photo-upload__controls--tablet {
+		display: block;
+		width: 50%;
+		.photo-upload__snaps{
+			flex-wrap: wrap;
+			padding: 62px 0px 23px 0px;
+			width: 270px;
+			margin: 0 auto;
+		}
+
+		.photo-upload__line {
+			display: flex;
+			width: 100%;
+			margin-bottom: 42px;
+		}
+
+		.photo-upload__image {
+			width: 50%;
+		}
+		
+		.photo-upload__slide{
+			background: #f2f2f2;
+			margin-left: 20px;
+		}
+
+		.photo-upload__snap-contrast {
+			margin: 0 3px;
+		}
+		.photo-upload__buttons {
+			padding-top: 18px;
+		}
+	}
+	.photo-upload__controls--mobile {
+		display: none;
+	}
+}

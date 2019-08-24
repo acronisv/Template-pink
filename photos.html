@@ -97,7 +97,11 @@
             </div>
             <div class="photo-content__main-post">
                 <div class="photo-content__main-image">
-                    <img src="/src/img/panorama-mobile.png" alt="Панорама дня">
+                    <picture>
+                        <source media="(min-width:1280px)" srcset="/src/img/panorama-desktop@1x.jpg 1x, /src/img/panorama-desktop@2x.jpg 2x">
+                        <source media="(min-width:660px)" srcset="/src/img/panorama-tablet@1x.jpg 1x, /src/img/panorama-tablet@2x.jpg 2x">
+                        <img class="photo-content__background-image" src="/src/img/panorama-mobile.png" alt="Панорама дня">
+                    </picture>
                 </div>
                 <article class="photo-content__comment-wrap user-post">
                     <h4 class="user-post__header">Анна<span class="user-post__time"> (5 минут назад)</span></h4>
@@ -109,7 +113,11 @@
             </div>
             <div class="photo-content__gallery">
                 <div class="photo-content__gallery-item">
-                    <img class="photo-content__image" src="/src/img/gallery-img1.png" alt="Автомобиль">
+                    <picture>
+                        <source media="(min-width:1280px)" srcset="/src/img/gallery-img1-desktop@1x.jpg 1x, /src/img/gallery-img1-desktop@2x.jpg 2x">
+                        <source media="(min-width:660px)" srcset="/src/img/gallery-img1-tablet@1x.jpg 1x, /src/img/gallery-img1-tablet@2x.jpg 2x">
+                        <img class="photo-content__image" src="/src/img/gallery-img1.png" alt="Автомобиль">
+                    </picture>
                     <article class="photo-content__comment-wrap user-post">
                         <h4 class="user-post__header">Левон<span class="user-post__time"> (5 часов назад)</span></h4>
                         <p class="user-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -119,7 +127,11 @@
                     </article>
                 </div>
                 <div class="photo-content__gallery-item">
-                    <img class="photo-content__image" src="/src/img/gallery-img2.png" alt="Инструменты">
+                    <picture>
+                        <source media="(min-width:1280px)" srcset="/src/img/gallery-img2-desktop@1x.jpg 1x, /src/img/gallery-img2-desktop@2x.jpg 2x">
+                        <source media="(min-width:660px)" srcset="/src/img/gallery-img2-tablet@1x.jpg 1x, /src/img/gallery-img2-tablet@2x.jpg 2x">
+                        <img class="photo-content__image" src="/src/img/gallery-img2.png" alt="Инструменты">
+                    </picture>
                     <article class="photo-content__comment-wrap user-post">
                         <h4 class="user-post__header">Антон<span class="user-post__time"> (12 часов назад)</span></h4>
                         <p class="user-post__text">Соседи будут рады</p>
@@ -129,7 +141,11 @@
                     </article>
                 </div>
                 <div class="photo-content__gallery-item">
-                    <img class="photo-content__image" src="/src/img/gallery-img3.png" alt="Здание">
+                    <picture>
+                        <source media="(min-width:1280px)" srcset="/src/img/gallery-img3-desktop@1x.jpg 1x, /src/img/gallery-img3-desktop@2x.jpg 2x">
+                        <source media="(min-width:660px)" srcset="/src/img/gallery-img3-tablet@1x.jpg 1x, /src/img/gallery-img3-tablet@2x.jpg 2x">
+                        <img class="photo-content__image" src="/src/img/gallery-img3.png" alt="Здание">
+                    </picture>
                     <article class="photo-content__comment-wrap user-post">
                         <h4 class="user-post__header">Борис<span class="user-post__time"> (20 часов назад)</span></h4>
                         <p class="user-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -139,7 +155,11 @@
                     </article>
                 </div>
                 <div class="photo-content__gallery-item">
-                    <img class="photo-content__image" src="/src/img/gallery-img4.png" alt="Бахча">
+                    <picture>
+                        <source media="(min-width:1280px)" srcset="/src/img/gallery-img4-desktop@1x.jpg 1x, /src/img/gallery-img4-desktop@2x.jpg 2x">
+                        <source media="(min-width:660px)" srcset="/src/img/gallery-img4-tablet@1x.jpg 1x, /src/img/gallery-img4-tablet@2x.jpg 2x">
+                        <img class="photo-content__image" src="/src/img/gallery-img4.png" alt="Бахча">
+                    </picture>
                     <article class="photo-content__comment-wrap user-post">
                         <h4 class="user-post__header">Сергей<span class="user-post__time"> (25 часов назад)</span></h4>
                         <p class="user-post__text">Самая кубанская в мире!</p>
@@ -149,7 +169,11 @@
                     </article>
                 </div>
                 <div class="photo-content__gallery-item">
-                    <img class="photo-content__image" src="/src/img/gallery-img5.png" alt="Природа">
+                    <picture>
+                        <source media="(min-width:1280px)" srcset="/src/img/gallery-img5-desktop@1x.jpg 1x, /src/img/gallery-img5-desktop@2x.jpg 2x">
+                        <source media="(min-width:660px)" srcset="/src/img/gallery-img5-tablet@1x.jpg 1x, /src/img/gallery-img5-tablet@2x.jpg 2x">
+                        <img class="photo-content__image" src="/src/img/gallery-img5.png" alt="Природа">
+                    </picture>
                     <article class="photo-content__comment-wrap user-post">
                         <h4 class="user-post__header">Максим<span class="user-post__time">(40 часов назад)</span></h4>
                         <p class="user-post__text">Где снег-то?</p>
@@ -159,7 +183,11 @@
                     </article>
                 </div>
                 <div class="photo-content__gallery-item">
-                    <img class="photo-content__image" src="/src/img/gallery-img6.png" alt="Полет">
+                    <picture>
+                        <source media="(min-width:1280px)" srcset="/src/img/gallery-img6-desktop@1x.jpg 1x, /src/img/gallery-img6-desktop@2x.jpg 2x">
+                        <source media="(min-width:660px)" srcset="/src/img/gallery-img6-tablet@1x.jpg 1x, /src/img/gallery-img6-tablet@2x.jpg 2x">
+                        <img class="photo-content__image" src="/src/img/gallery-img6.png" alt="Полет">
+                    </picture>
                     <article class="photo-content__comment-wrap user-post">
                         <h4 class="user-post__header">Надежда<span class="user-post__time">(45 часов назад)</span></h4>
                         <p class="user-post__text">Всем GM и взаимные лайки</p>
@@ -174,7 +202,7 @@
             <p class="photo-upload__text">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
             <div class="photo-upload__area">
                 <img class="photo-upload__image" src="/src/img/upload-photo.png" alt="Загрузка фотографий">
-                <div class="photo-upload__controls">
+                <div class="photo-upload__controls photo-upload__controls--mobile">
                     <div class="photo-upload__snaps">
                         <button class="photo-upload__snap photo-upload__snap--active">
                             <svg class="crop" width="49" height="48"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop"></use></svg>
@@ -189,42 +217,70 @@
                     <div class="photo-upload__slides">
                         <input class="photo-upload__slide" type="range" min="0" max="100" step="1">
                     </div>
+                    <div class="photo-upload__buttons">
+                        <input class="photo-upload__button photo-upload__button--upload" type="submit" value="Запостить">
+                        <input class="photo-upload__button photo-upload__button--cancel" type="submit" value="Отмена">
+                    </div>
                 </div>
-                <div class="photo-upload__buttons">
-                    <input class="photo-upload__button photo-upload__button--upload" type="submit" value="Запостить">
-                    <input class="photo-upload__button photo-upload__button--cancel" type="submit" value="Отмена">
-                </div>
+                <div class="photo-upload__controls photo-upload__controls--tablet">
+                        <div class="photo-upload__snaps">
+                            <div class="photo-upload__line">
+                                <button class="photo-upload__snap photo-upload__snap--active">
+                                    <svg class="crop" width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop"></use></svg>
+                                </button>
+                                <input class="photo-upload__slide" type="range" min="0" max="100" step="1">
+                            </div>
+                            <div class="photo-upload__line">
+                                <button class="photo-upload__snap photo-upload__snap--active">
+                                    <svg class="fill" width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill"></use></svg>
+                                </button>
+                                <input class="photo-upload__slide" type="range" min="0" max="100" step="1">
+                            </div>
+                            <div class="photo-upload__line">
+                                <button class="photo-upload__snap photo-upload__snap--active">
+                                    <svg class="photo-upload__snap-contrast" width="18" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#contrast"></use></svg>
+                                </button>
+                                <input class="photo-upload__slide" type="range" min="0" max="100" step="1">
+                            </div>
+                        </div>
+                        <div class="photo-upload__buttons">
+                            <input class="photo-upload__button photo-upload__button--upload" type="submit" value="Запостить">
+                            <input class="photo-upload__button photo-upload__button--cancel" type="submit" value="Отмена">
+                        </div>
+                    </div>
             </div>
             
         </section>
     </main>
     <footer class="contacts contacts--no-index">
-        <div class="contacts__logo">
-                <svg class="contacts__logo-footer"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-footer"></use></svg>
-        </div>
-        <div class="contacts__social social-icons">
-            <ul class="social-icons__list">
-                <li class="social-icons__item">
-                    <a class="social-icons__link" href="#">
-                        <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
-                    </a>
-                </li>
-                <li class="social-icons__item">
-                    <a class="social-icons__link" href="#">
-                        <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg>
-                    </a>
-                        
-                </li>
-                <li class="social-icons__item">
-                    <a class="social-icons__link" href="#">
-                        <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use></svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="contacts__copyright">
-            <a href="#" class="contacts__copyright-link">Разработано</a>
-            <svg class="contacts__copyright-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg>
+        <div class="contacts__wrap">
+            <div class="contacts__logo">
+                    <svg class="contacts__logo-footer"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-footer"></use></svg>
+            </div>
+            <div class="contacts__social social-icons">
+                <ul class="social-icons__list">
+                    <li class="social-icons__item">
+                        <a class="social-icons__link" href="#">
+                            <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
+                        </a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a class="social-icons__link" href="#">
+                            <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg>
+                        </a>
+                            
+                    </li>
+                    <li class="social-icons__item">
+                        <a class="social-icons__link" href="#">
+                            <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts__copyright">
+                <a href="#" class="contacts__copyright-link">Разработано</a>
+                <svg class="contacts__copyright-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg>
+            </div>
         </div>
     </footer>
     <script src='../build/js/main.js'></script>

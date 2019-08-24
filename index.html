@@ -19,6 +19,9 @@
                 <path d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"></path>
             </g>
         </symbol>
+        <!-- <symbol id="logo-pink-tablet">
+            <path d="M0 1.46C0 .747.585.163 1.266.163h7.24c5.13 0 8.507 2.726 8.507 7.205v.064c0 4.9-4.09 7.43-8.928 7.43h-5.52v6.882c0 .714-.584 1.297-1.3 1.297-.68 0-1.265-.58-1.265-1.29V1.46zm8.182 11.067c3.767 0 6.234-2.012 6.234-4.998v-.07c0-3.25-2.435-4.94-6.104-4.94H2.565v9.99h5.617zm14.266-11.23c0-.713.584-1.297 1.266-1.297.714 0 1.3.584 1.3 1.298v20.446c0 .714-.585 1.297-1.3 1.297-.682 0-1.267-.58-1.267-1.29V1.3zm8.69.033c0-.68.584-1.265 1.266-1.265h.357c.59 0 .95.292 1.3.747L47.86 18.4V1.266C47.86.584 48.41 0 49.124 0c.682 0 1.234.584 1.234 1.266v20.51c0 .682-.488 1.2-1.17 1.2h-.13c-.552 0-.94-.324-1.332-.778l-14.09-18.01v17.588c0 .682-.552 1.265-1.267 1.265-.68 0-1.24-.58-1.24-1.26V1.33zm24.902-.032C56.04.584 56.622 0 57.303 0c.715 0 1.3.584 1.3 1.298v12.43L71.558.454c.29-.26.584-.455 1.007-.455.682 0 1.233.61 1.233 1.26 0 .35-.163.65-.422.91l-8.053 7.98L73.96 20.8c.228.293.357.554.357.94 0 .683-.584 1.3-1.3 1.3-.485 0-.81-.26-1.038-.583L63.5 11.91l-4.9 4.9v4.934c0 .714-.586 1.297-1.3 1.297-.683 0-1.267-.58-1.267-1.29V1.3z"/>
+        </symbol> -->
         <symbol viewBox="0 0 146.3 40.375" id="logo-pink-footer" width="100%" height="100%">
             <g>
                 <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"></path>
@@ -202,7 +205,40 @@
             </div>
         </div>
         <div class="contacts__map">
-            <img class="contacts__image" src="/src/img/map-mobile.png" alt="Карта">
+            <picture>
+                <source media="(min-width:1280px)" srcset="/src/img/map-desktop@1x.jpg 1x, /src/img/map-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)" srcset="/src/img/map-tablet@1x.jpg 1x, /src/img/map-tablet@2x.jpg 2x">
+                <img class="contacts__image" src="/src/img/map-mobile.png" alt="Карта">
+            </picture>
+        </div>
+        <div class="contacts__wrap">
+            <div class="contacts__logo">
+                    <svg class="contacts__logo-footer"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-footer"></use></svg>
+            </div>
+            <div class="contacts__social social-icons">
+                <ul class="social-icons__list">
+                    <li class="social-icons__item">
+                        <a class="social-icons__link" href="#">
+                            <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
+                        </a>
+                    </li>
+                    <li class="social-icons__item">
+                        <a class="social-icons__link" href="#">
+                            <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg>
+                        </a>
+                            
+                    </li>
+                    <li class="social-icons__item">
+                        <a class="social-icons__link" href="#">
+                            <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts__copyright">
+                <a href="#" class="contacts__copyright-link">Разработано</a>
+                <svg class="contacts__copyright-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-github"></use></svg>
+            </div>
         </div>
     </footer>
     <script src='../build/js/main.js'></script>
