@@ -3,6 +3,11 @@
 		padding: 0 20px;
 	}
 
+	&__form {
+		display: flex;
+		flex-direction: column;
+	}
+
 	&__text {
 		margin: 0;
 		padding: 47px 0 39px;
@@ -248,5 +253,57 @@
 
 	&__required {
 		color: #d22856;
+	}
+}
+
+@media (min-width: 660px) {
+	.review {
+		max-width: 620px;
+		padding: 0 20px;
+		margin: 0 auto;
+		&__text {
+			font-size: 21px;
+			padding: 96px 30px 69px;
+		}
+	}
+	.review__section--introduce .review {
+		&__line-wrapper {
+			flex-direction: row;
+			align-items: center;
+			margin-bottom: 52px;
+		}
+
+		&__label {
+			margin: 0 23px 0 0;
+		}
+
+		&__input {
+			width: 100%;
+		}
+		
+		&__form-wrapper {
+			padding: 0;
+		}
+	}
+
+	.review__section--introduce {
+		order: 1;
+	}
+
+	.review__section--impression {
+		order: 4;
+	}
+
+	.review__section--contact-info {
+		order: 3;
+	}
+
+	.review__section--app-info {
+		background: none;
+		order: 2;
+	}
+
+	.review__section--emotions {
+		order: 5;
 	}
 }

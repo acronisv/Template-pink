@@ -40,9 +40,14 @@
 
 @media (min-width: 660px) {
 	.intro {
+		background-image: url('/src/img/back-tablet.png');
+		background-position-y: -111px;
 		&__wrap {
-			background-image: url('/src/img/back-tablet.png');
-			height: 328px;
+			background-image: url('/src/img/iphone-hand-tablet.png');
+			height: 617px;
+			background-position-y: bottom;
+			background-position-x: 87%;
+			background-size: 74%;
 		} 
 
 		&__text {
@@ -54,6 +59,8 @@
 	}
 
 	.intro__wrap--no-index {
+		height: 328px;
+		background-image: none;
 		.intro__header {
 			padding-top: 72px;
 			max-width: 500px;
