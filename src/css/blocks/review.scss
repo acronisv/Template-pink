@@ -117,9 +117,14 @@
 	}
 	&__section--contact-info {
 		padding-top: 39px;
+		.review__section-title {
+			display: none;
+		}
+
 		.review__form-wrapper {
 			padding: 0 20px 18px;
 		}
+
 		.review__line-wrapper {
 			display: flex;
 			flex-direction: column;
@@ -206,7 +211,8 @@
 		.review__section-title{
 			text-transform: uppercase;
 			text-align: center;
-			padding: 25px 0 3px;
+			padding: 40px 0 17px;
+			margin: 0 auto;
 		}
 		.review__textarea {
 			width: 280px;
@@ -258,9 +264,10 @@
 
 @media (min-width: 660px) {
 	.review {
-		max-width: 620px;
+		@include container-tablet;
+		//max-width: 620px;
 		padding: 0 20px;
-		margin: 0 auto;
+		//margin: 0 auto;
 		&__text {
 			font-size: 21px;
 			padding: 96px 30px 69px;
@@ -292,18 +299,106 @@
 
 	.review__section--impression {
 		order: 4;
+		border: 2px solid #f2f2f2;
+		background: none;
+		padding: 0;
+		margin-bottom: 66px;
+		.review__section-title {
+			position: static;
+			padding: 0px 24px;
+		}
+
+		.review__form-wrapper {
+			padding: 2px 60px;
+			margin-top: 44px;
+		}
+
+		.review__label::before {
+			margin-right: 20px;
+		}
 	}
 
 	.review__section--contact-info {
 		order: 3;
+		border: 2px solid #f2f2f2;	
+		margin-bottom: 55px;
+		.review__section-title {
+			display: block;
+			margin: 0 auto;
+			text-transform: uppercase;
+			background: #fff;
+			padding: 0px 30px
+		}
+		.review__line-wrapper {
+			flex-direction: column-reverse;
+			.review__label {
+				margin-top: 16px;
+			}
+		}
+
+		.review__form-wrapper {
+			padding: 0 60px 0px;
+		}
 	}
 
 	.review__section--app-info {
 		background: none;
 		order: 2;
+		border: 2px solid #f2f2f2;	
+		padding: 0;
+		top: 4px;
+		margin-bottom: 60px;
+		.review__section-title {
+			display: block;
+			margin: 0 auto;
+			position: static;
+			padding: 0 23px;
+		}
+		.review__form-wrapper {
+			padding: 0 59px;
+			margin-top: 45px;
+			margin-bottom: 55px;
+		}
+		.review__label::before {
+			margin-right: 20px;
+		}
 	}
 
 	.review__section--emotions {
 		order: 5;
+		
+		.review__form-wrapper {
+			position: relative;
+			border: 2px solid #f2f2f2;
+			padding: 46px 20px 51px;
+		}
+		.review__section-title {
+			padding: 0;
+			position: absolute;
+			width: 248px;
+			left: 0;
+			right: 0;
+			top: -9px;
+			background: #fff;
+		}
+		.review__textarea {
+			width: 500px;
+			margin-bottom: 0;
+			min-height: 192px
+		}
+
+		.review__form-submit {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 67px 0;
+		}
+		.review__button-submit {
+			margin: 0;
+			width: 300px;
+		}
+		.review__note {
+			margin: 0;
+		}
 	}
 }

@@ -97,6 +97,11 @@
 
 @media (min-width: 660px) {
 	.contacts {
+		@include container-tablet;
+		display: flex;
+		justify-content: space-evenly;
+		padding-top: 20px;
+		padding-bottom: 40px;
 		&__main-header {
 			font-size: 40px;
 			line-height: 50px;

@@ -137,11 +137,12 @@
                         </div>
                         <div class="review__line-wrapper">
                             <input class="review__input" type="checkbox" id="hotel" name="hotel">
-                            <label class="review__label" for="hotel">Разгромил отел</label>
+                            <label class="review__label" for="hotel">Разгромил отель</label>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset class="review__section review__section--contact-info">
+                    <legend class="review__section-title">Контактная информация</legend>
                     <div class="review__form-wrapper">
                         <div class="review__line-wrapper">
                             <label class="review__label" for="phone">Номер телефона</label>
@@ -171,12 +172,16 @@
                     </div>
                 </fieldset>
                 <fieldset class="review__section review__section--emotions">
+                    
                     <div class="review__form-wrapper">
-                        <p class="review__section-title">Опишите свои эмоции</p>
+                        <legend class="review__section-title">Опишите свои эмоции</legend>
                         <textarea class="review__textarea" name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
                     </div>
-                    <input class="review__button-submit" type="submit" value="Отправить форму">
-                    <p class="review__note"><span class="review__required">*</span> — обязательные поля</p>
+                    <div class="review__form-submit">
+                        <input class="review__button-submit" type="submit" value="Отправить форму">
+                        <p class="review__note"><span class="review__required">*</span> — обязательные поля</p>
+                    </div>
+                    
                 </fieldset>
                 
             </form>
