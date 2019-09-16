@@ -68,6 +68,7 @@
 	}
 
 	&__map {
+		position: relative;
 		margin-top: 42px;
 		
 		&::before {
@@ -97,11 +98,14 @@
 
 @media (min-width: 660px) {
 	.contacts {
-		@include container-tablet;
+		margin-left: auto;
+		margin-right: auto;
 		display: flex;
+		flex-direction: column;
 		justify-content: space-evenly;
 		padding-top: 20px;
 		padding-bottom: 40px;
+
 		&__main-header {
 			font-size: 40px;
 			line-height: 50px;
