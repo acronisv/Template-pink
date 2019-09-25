@@ -1,0 +1,18 @@
+.main-header {
+    background-image: url('/src/img/back-mobile.png');
+}
+
+@media (min-width: 660px) {
+	.main-header {
+        background-image: url('/src/img/back-tablet.png');
+    }
+}
+
+@media (min-width: 1200px) {
+	.main-header {
+        background-image: url('/src/img/back-desktop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+}
