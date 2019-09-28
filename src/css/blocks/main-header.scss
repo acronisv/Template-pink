@@ -1,18 +1,19 @@
 .main-header {
     background-image: url('/src/img/back-mobile.png');
+    background-repeat: no-repeat;
+    background-position: 50% bottom;
+    background-size: contain;
 }
 
 @media (min-width: 660px) {
 	.main-header {
         background-image: url('/src/img/back-tablet.png');
+        background-size: cover;
     }
 }
 
 @media (min-width: 1200px) {
 	.main-header {
         background-image: url('/src/img/back-desktop.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 50%;
     }
 }

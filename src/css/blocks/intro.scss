@@ -5,6 +5,7 @@
 		background-repeat: no-repeat;
 		background-position-y: 109px;
 		position: relative;
+		//@include container-mobile;
 	} 
 
 	&__header {
@@ -13,11 +14,11 @@
 	
 	&__text {
 		background-color: #1d2631;
-		padding: 28px 20px 17px 20px;
+		padding: 28px 0px 17px;
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-    	box-sizing: border-box;
+		box-sizing: border-box;
 	}
 
 	&__wrap--no-index {
@@ -39,11 +40,12 @@
 @media (min-width: 660px) {
 	.intro {
 		&__wrap {
+			@include container-tablet;
 			background-image: url('/src/img/iphone-hand-tablet.png');
 			height: 617px;
 			background-position-y: bottom;
-			background-position-x: 87%;
-			background-size: 74%;
+			background-position-x: right;
+    		background-size: 487px auto;
 		} 
 
 		&__text {
@@ -70,6 +72,8 @@
 		&__wrap {
 			@include container-desktop;
 			background-image: url(/src/img/iphone-hand-desktop@1x.png);
+			background-size: 109%;
+			background-position-x: 27px;
 			height: auto;
 		}
 		&__text {
