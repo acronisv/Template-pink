@@ -50,3 +50,28 @@
 		}
 	}
 }
+
+
+@media (min-width: 1200px) {
+	.reviews {
+		@include container-desktop;
+		background-image: url('/src/img/quote.png');
+		background-position: 50% 74px;
+		padding-top: 170px;
+		padding-bottom: 23px;
+
+		&__item {
+			width: 700px;
+			margin: 0 auto;
+		}
+
+		&__name {
+			font-size: 26px;
+		}
+
+		&__note {
+			font-size: 19px;
+			margin-top: 6px;
+		}
+	}
+}
