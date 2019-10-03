@@ -1,5 +1,4 @@
 .user-post {
-	margin: 0 20px 18px 20px;
 	background-color: #f2f2f2;
 	padding: 20px 17px;
 	&__header{
@@ -42,6 +41,54 @@
 @media (min-width: 660px) {
 	.user-post {
 		padding: 27px;
-		margin-bottom: 14px;
+		display: flex;
+		flex-wrap: wrap;
+
+		&__time {
+			font-size: 12px;
+		}
+		&__row {
+			&::before {
+				left: auto;
+				right: 0;	
+			}
+		}
+	}
+
+	.photo-content__gallery {
+		.user-post {
+			min-height: 102px;
+			&__footer {
+				width: 100%;
+			}
+	
+			&__row {
+				padding-left: 0;
+				margin-top: 19px;
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.photo-content__main-post {
+		.user-post {	
+			&__row {
+				padding-right: 25px;
+				margin: 5px 0;
+
+			}
+			&__header {
+				order: 0;
+				margin-right: auto;
+			}
+	
+			&__text {
+				order:2;
+			}
+	
+			&__footer {
+				order: 1;
+			}
+		}
 	}
 }

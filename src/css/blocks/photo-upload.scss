@@ -7,13 +7,17 @@
 		line-height: 30px;
 	}
 
-	&__area {
+	&__container {
 		background-color: #f2f2f2;
+	}
+
+	&__area {
+		@include container-mobile;
 		padding: 20px 0 30px;
 	}
 
 	&__image {
-		display: block;
+		@include img-responsive;
 		margin: 0 auto;
 	}
 
@@ -39,7 +43,7 @@
 	}
 
 	&__slides {
-		padding: 0 38px;
+		padding: 0 21px;
 	}
 
 	&__slide {
@@ -75,7 +79,7 @@
 		display: block;
 		margin: 12px auto;
 		padding: 14px 0;
-		width: 280px;
+		width: 100%;
 		border: 3px solid #d22856;
 		background: #f2f2f2;
 		color: #d22856;
@@ -123,31 +127,38 @@
 		}
 
 		&__area {
+			@include container-tablet;
 			display: flex;
-			max-width: 620px;
 			padding: 0 20px;	
-			justify-content: space-between;
 			margin: 0 auto;
 		}
 
 		&__image {
-			margin: 56px 0;
+			margin: 56px 41px 56px 0;
+			max-width: 300px;
+		}
+
+		&__button {
+			margin: 9px 0 23px 5px;
+			width: 261px;
 		}
 	}
 	.photo-upload__controls--tablet {
 		display: block;
-		width: 50%;
+		width: 300px;
+
 		.photo-upload__snaps{
 			flex-wrap: wrap;
-			padding: 62px 0px 23px 0px;
-			width: 270px;
-			margin: 0 auto;
+			padding: 62px 0px 19px 0px;
+			margin: 0;
 		}
 
 		.photo-upload__line {
 			display: flex;
 			width: 100%;
-			margin-bottom: 42px;
+			margin-bottom: 23px;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #dddfe0;
 		}
 
 		.photo-upload__image {
@@ -156,7 +167,8 @@
 		
 		.photo-upload__slide{
 			background: #f2f2f2;
-			margin-left: 20px;
+			margin-left: 23px;
+			margin-right: 18px;
 		}
 
 		.photo-upload__snap-contrast {
@@ -168,5 +180,73 @@
 	}
 	.photo-upload__controls--mobile {
 		display: none;
+	}
+}
+
+@media (min-width: 1200px) {
+	.photo-upload {
+		margin-bottom: 30px;
+		&__container {
+			@include container-desktop;
+			background: none;
+		}
+
+		&__area {
+			background: #f2f2f2;
+			width: auto;
+		}
+
+		&__text {
+			padding-top: 6px;
+		}
+
+		&__image {
+			margin-left: 60px;
+		}
+	}
+
+	.photo-upload__controls--tablet {
+		width: auto;
+		padding: 0 43px;
+		.photo-upload {
+			&__snaps {
+				padding: 52px 0 127px;
+			}
+			&__snap-crop {
+				width: 47px;
+				height: 47px;
+			}
+
+			&__snap-contrast {
+				width: 32px;
+				height: 36px;
+				margin-left: 6px;
+			}
+
+			&__snap-fill {
+				width: 47px;
+				height: 47px;
+			}
+
+			&__slide {
+				margin-left: 41px;
+    			margin-right: 26px;
+			}
+
+			&__line {
+				padding-bottom: 10px;
+				margin-bottom: 12px;
+			}
+
+			&__buttons {
+				display: flex;
+				justify-content: space-between;
+				padding: 0;
+			}
+
+			&__button {
+				width: 184px;
+			}
+		}
 	}
 }

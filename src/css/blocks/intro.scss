@@ -75,7 +75,12 @@
 			background-size: 109%;
 			background-position-x: 27px;
 			height: auto;
+			&--no-index {
+				min-height: 284px;
+				background-image: none;
+			}
 		}
+
 		&__text {
 			margin: 0;
 		}

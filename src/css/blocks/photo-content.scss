@@ -3,6 +3,10 @@
 		padding: 0 20px;
 	}
 
+	&__gallery {
+		@include container-mobile;
+	}
+
 	&__text {
 		margin: 0;
 		padding: 47px 0;
@@ -14,6 +18,10 @@
 		&--bottom {
 			padding: 23px 0;
 		}
+	}
+
+	&__main-post {
+		margin-bottom: 18px;
 	}
 
 	&__main-image {
@@ -36,24 +44,29 @@
 	}
 
 	&__image {
-		display: block;
+		@include img-responsive;
 		margin: 0 auto;
 	}
 
 	&__background-image {
-		display: block;
-		height: auto;
-		width: 100%;
+		@include img-responsive;
 	}
 
 	&__gallery-item {
-		
+		margin-bottom: 18px;
+	}
+
+	&__main-post {
+		.photo-content__comment-wrap {
+			margin: 0 20px;
+		}
 	}
 }
 
 @media (min-width: 660px) {
 	.photo-content {
 		&__main-post {
+			margin-bottom: 45px;
 			.photo-content__comment-wrap {
 				@include container-tablet;
 				padding-left: 30px;
@@ -85,10 +98,40 @@
 			&-item {
 				width: 300px;
 			}
+		}
+	}
+}
 
-			.user-post {
-				margin-left: 10px;
-				margin-right: 10px;
+@media (min-width: 1200px) {
+	.photo-content {
+		&__intro{
+			min-height: 240px;
+		}
+
+		&__text {
+			max-width: 800px;
+		}
+
+		&__main-image {
+			max-width: none;
+			&::before {
+				top: 54px;
+				right: 129px;
+			}
+		}
+
+		&__main-post {
+			.photo-content__comment-wrap {
+				@include container-desktop;
+				padding-left: 30px;
+    			padding-right: 30px;
+			}
+		}
+
+		&__gallery {
+			@include container-desktop;
+			&-item {
+				margin-bottom: 52px;
 			}
 		}
 	}
