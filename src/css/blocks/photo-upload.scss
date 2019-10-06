@@ -121,6 +121,7 @@
 
 @media (min-width: 660px) {
 	.photo-upload {
+		margin-bottom: 15px;
 		&__text {
 			font-size: 19px;
 			padding: 51px 0 67px;
@@ -185,7 +186,7 @@
 
 @media (min-width: 1200px) {
 	.photo-upload {
-		margin-bottom: 30px;
+		margin-bottom: 97px;
 		&__container {
 			@include container-desktop;
 			background: none;

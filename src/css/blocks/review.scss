@@ -265,9 +265,7 @@
 @media (min-width: 660px) {
 	.review {
 		@include container-tablet;
-		//max-width: 620px;
 		padding: 0 20px;
-		//margin: 0 auto;
 		&__text {
 			font-size: 21px;
 			padding: 96px 30px 69px;
@@ -399,6 +397,104 @@
 		}
 		.review__note {
 			margin: 0;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.review {
+		@include container-desktop;
+
+		&__text {
+			padding: 94px 50px 83px;
+		}
+
+		&__form {
+			flex-wrap: wrap;
+			flex-direction: row;
+		}
+		&__section {
+			box-sizing: border-box;
+		}
+
+		&__section--introduce {
+			width: 470px;
+			.review__form-wrapper {
+				padding-right: 20px;
+				padding-right: 35px;
+			}
+		}
+
+		&__section--app-info {
+			width: 435px;
+			top: -15px;
+			margin-left: auto;
+			margin-bottom: 43px;
+			.review__form-wrapper {
+				padding: 0 75px;
+			}
+		}
+
+		&__section--contact-info {
+			width: 100%;
+			padding-top: 35px;
+			
+			.review__form-wrapper {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			.review__line-wrapper {
+				position: relative;
+				width: 375px;
+				margin-bottom: 10px;
+				&::after {
+					content:"";
+					position: absolute;
+					top: 2px;
+					right: 2px;
+					display: block;
+					width: 58px;
+					height: 59px;
+					background-color: #e5e5e5;
+					background-repeat: no-repeat;
+					background-position: center;
+				}
+
+				&--phone::after {
+					background-image: url('/src/img/icon-phone.svg');
+				}
+
+				&--mail::after {
+					background-image: url('/src/img/icon-mail.svg');
+				}
+			}
+		}
+		
+
+		&__section--impression {
+			width: 100%;
+			.review__form-wrapper {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				padding: 0 0 13px 60px;
+			}
+			.review__line-wrapper {
+				width: 267px;
+			}
+		}
+
+		&__section--emotions {
+			width: 100%;
+			.review__form-wrapper {
+				padding: 41px 58px 44px;
+			}
+
+			.review__textarea {
+				width: 100%;
+				min-height: 127px;
+			}
 		}
 	}
 }

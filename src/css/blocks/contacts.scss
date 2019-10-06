@@ -128,12 +128,14 @@
 			margin-top: 0px;
 			max-height: 374px;
 			overflow: hidden;
+			margin-bottom: 15px;
 		}
 
 		&__wrap {
 			@include container-tablet;
 			display: flex;
 			justify-content: space-around;
+			padding: 22px 0 40px;
 		}
 
 		&__logo {
@@ -189,12 +191,13 @@
 
 		&__map {
 			max-height: 500px;
+			margin-bottom: 68px;
 		}
 
 		&__wrap {
 			@include container-desktop;
 			justify-content: space-between;
-			padding: 71px 0;
+			padding: 5px 0 71px;
 		}
 
 		&__copyright-link {
