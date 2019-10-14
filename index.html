@@ -103,6 +103,12 @@
         <symbol viewBox="0 0 16 16" id="icon-github" width="100%" height="100%">
             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
         </symbol>
+        <symbol viewBox="-82.357 4.875 21.698 16.09" id="icon-ok" width="100%" height="100%">
+            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.09 C-60.562,6.191-60.562,5.558-60.953,5.167z"></path>
+        </symbol>
+        <symbol viewBox="0 0 26.752 26.752" id="icon-nope" width="100%" height="100%">
+            <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"></path>
+        </symbol>
     </svg>
     <header class="main-header">
         <nav class="main-nav">
@@ -221,32 +227,58 @@
         </section>
         <section class="price">
             <div class="price__container">
+                <input type="radio" class="price__switcher" name="switcher" id="price__switcher-1">
+                <input checked type="radio" class="price__switcher" name="switcher" id="price__switcher-2">
+                <input type="radio" class="price__switcher" name="switcher" id="price__switcher-3">
                 <table class="price__table price-table">
                     <tr class="price-table__head">
-                        <th></th>
-                        <th>База<br><span class="price-table__price">1.99 USD</span></th>
-                        <th>Стандарт<br><span class="price-table__price">3.99 USD</span></th>
-                        <th>Анлим<br><span class="price-table__price">9.99 USD</span></th>
+                        <th class="price-table__header price-table__header--hidden"></th>
+                        <th class="price-table__header">База<br><span class="price-table__price">1.99 USD</span></th>
+                        <th class="price-table__header price-table__header--hit">Стандарт<br><span class="price-table__price">3.99 USD</span></th>
+                        <th class="price-table__header">Анлим<br><span class="price-table__price">9.99 USD</span></th>
                     </tr>
                     <tr class="price-table__row">
-                        <td class="price-table__cell">Розовый фильтр</td>
-                        <td class="price-table__cell price-table__cell--ok">Розовый фильтр</td>
-                        <td class="price-table__cell price-table__cell--ok">Розовый фильтр</td>
-                        <td class="price-table__cell price-table__cell--ok">Розовый фильтр</td>
+                        <td class="price-table__cell price-table__cell--hidden">Розовый фильтр</td>
+                        <td class="price-table__cell price-table__cell--ok">Розовый фильтр
+                            <svg class="price-table__icon-ok"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ok"></use></svg>
+                        </td>
+                        <td class="price-table__cell price-table__cell--ok">Розовый фильтр
+                            <svg class="price-table__icon-ok"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ok"></use></svg>
+                        </td>
+                        <td class="price-table__cell price-table__cell--ok">Розовый фильтр
+                            <svg class="price-table__icon-ok"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ok"></use></svg>
+                        </td>
                     </tr>
                     <tr class="price-table__row">
-                        <td class="price-table__cell">Смайлики</td>
-                        <td class="price-table__cell price-table__cell--nope">Смайлики</td>
-                        <td class="price-table__cell price-table__cell--ok">Смайлики</td>
-                        <td class="price-table__cell price-table__cell--ok">Смайлики</td>
+                        <td class="price-table__cell price-table__cell--hidden">Смайлики</td>
+                        <td class="price-table__cell price-table__cell--nope">Смайлики
+                            <svg class="price-table__icon-nope"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-nope"></use></svg>
+                        </td>
+                        <td class="price-table__cell price-table__cell--ok">Смайлики
+                            <svg class="price-table__icon-ok"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ok"></use></svg>
+                        </td>
+                        <td class="price-table__cell price-table__cell--ok">Смайлики
+                            <svg class="price-table__icon-ok"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ok"></use></svg>
+                        </td>
                     </tr>
                     <tr class="price-table__row">
-                        <td class="price-table__cell">Комментарии</td>
-                        <td class="price-table__cell price-table__cell--nope">Комментарии</td>
-                        <td class="price-table__cell price-table__cell--nope">Комментарии</td>
-                        <td class="price-table__cell price-table__cell--ok">Комментарии</td>
+                        <td class="price-table__cell price-table__cell--hidden">Комментарии</td>
+                        <td class="price-table__cell price-table__cell--nope">Комментарии
+                            <svg class="price-table__icon-nope"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-nope"></use></svg>
+                        </td>
+                        <td class="price-table__cell price-table__cell--nope">Комментарии
+                            <svg class="price-table__icon-nope"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-nope"></use></svg>
+                        </td>
+                        <td class="price-table__cell price-table__cell--ok">Комментарии
+                            <svg class="price-table__icon-ok"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ok"></use></svg>
+                        </td>
                     </tr>  
                 </table>
+                <div class="price__controls">
+                    <label for="price__switcher-1" class="price__btn"></label>    
+                    <label for="price__switcher-2" class="price__btn"></label>    
+                    <label for="price__switcher-3" class="price__btn"></label>    
+                </div>
             </div>
         </section>
     </main>
