@@ -364,6 +364,7 @@
 
 	.review__section--emotions {
 		order: 5;
+		position: relative;
 		
 		.review__form-wrapper {
 			position: relative;
@@ -378,6 +379,7 @@
 			right: 0;
 			top: -9px;
 			background: #fff;
+			z-index: 5;
 		}
 		.review__textarea {
 			width: 500px;

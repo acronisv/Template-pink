@@ -19,3 +19,7 @@ a:hover {
 a:visited {
 	color: #f2f2f2;
 }
+
+.visually-hidden {
+	@include v-hidden;
+}
