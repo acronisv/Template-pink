@@ -1,5 +1,5 @@
 .reviews {
-	background-image: url(/src/img/bg-triangle-white.svg);
+	background-image: url('../img/bg-triangle-white.svg');
 	background-repeat: no-repeat;
 	background-position: 0 100%;
 	padding: 0 20px 70px 20px;
@@ -47,6 +47,31 @@
 			order: 2;
 			text-align: center;
 			margin-top: 11px;
+		}
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.reviews {
+		@include container-desktop;
+		background-image: url('../img/quote.png');
+		background-position: 50% 74px;
+		padding-top: 170px;
+		padding-bottom: 23px;
+
+		&__item {
+			width: 700px;
+			margin: 0 auto;
+		}
+
+		&__name {
+			font-size: 26px;
+		}
+
+		&__note {
+			font-size: 19px;
+			margin-top: 6px;
 		}
 	}
 }

@@ -1,8 +1,8 @@
 .offer {
 	&__wrap {
-		background-image: url(/src/img/bg-triangle-white.svg);
+		background-image: url('../img/bg-triangle-white.svg');
 		background-repeat: no-repeat;
-		background-position: 96% 0;
+		background-size: contain;
 		background-color: #f2f2f2;
 	}
 
@@ -25,21 +25,14 @@
 	}
 
 	&__pics {
-		background-image: url(/src/img/iphone-screen-mobile.png);
+		background-image: url('../img/iphone-screen-mobile.png');
 		background-repeat: no-repeat;
 		background-position: 50% 7px;
 		height: 284px;
 	}
-	&__pic--gray {
-		background: #000;
-	}
 
-	&__pic--pink{
-
-	}
-
-	&__pic--pink-text{
-
+	&__pic {
+		display: none;
 	}
 }
 
@@ -60,7 +53,7 @@
 			@include container-tablet;
 		}
 		&__pics {
-			background-image: url(/src/img/iphone-screen-tablet.png);
+			background-image: url('../img/iphone-screen-tablet.png');
 			background-position: 0% 100%;
 			height: auto;
 			order: 0;
@@ -71,4 +64,39 @@
 			padding: 102px 20px 0 0;
 		}
 	}
+}
+
+@media (min-width: 1200px) {
+	.offer {
+		&__header {
+			padding-top: 73px;
+			margin-bottom: 76px;
+		}
+
+		&__slogan {
+			font-size: 50px;
+		}
+
+		&__container {
+			@include container-desktop;
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__functions {
+			padding: 34px 0 0;
+		}
+
+		&__pic {
+			display: block;
+		}
+
+		&__pics {
+			display: flex;
+			justify-content: space-between;
+			background: none;
+		}
+	}
+
+	
 }

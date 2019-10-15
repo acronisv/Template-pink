@@ -25,3 +25,13 @@
 		fill: #d22856;
 	}
 }
+
+@media (min-width: 660px) {
+	.social-icons {
+		padding: 0;
+
+		&__item {
+			margin: 0 7px;
+		}
+	}
+}
