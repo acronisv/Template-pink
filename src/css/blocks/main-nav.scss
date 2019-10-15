@@ -5,7 +5,7 @@
 
 	&__logo {
 		&:hover {
-			fill: #d22856;
+			fill: #fa2c63;
 		}
 
 		&:active {
@@ -48,6 +48,45 @@
 		padding: 0;
 		text-align: center;
 		border-top: 1px solid #000;
+	}
+
+	&__hidden .main-nav__list {
+		display: none;
+	}
+
+	&__hidden {
+		.main-nav__toggle-menu-button {
+			background-color: #fff;
+			height: 24px;
+		
+			&:hover::before, &:hover::after{
+				background-color: #283645;
+			}
+		
+			&:active::before, &:active::after {
+				background-color: #283645;
+			}
+			
+			&::before {
+				content:'';
+				width: 40px;
+				height: 6px;
+				left: 0px;
+				top: 14px;
+				background-color: #283645;
+				transform: none;
+			}
+		
+			&::after{
+				content:'';
+				width: 40px;
+				height: 6px;
+				left: 0px;
+				top: 4px;
+				background-color: #283645;
+				transform: none;
+			}
+		}
 	}
 
 	&__link {
@@ -100,6 +139,8 @@
 		}
 	}
 
+	
+
 	&__logo--tablet {
 		display: none;
 	}
@@ -136,7 +177,10 @@
 @media (min-width: 1200px) {
 	.main-nav {
 		background-color:rgba(0, 0, 0, 0.5);
-		
+
+		&__hidden .main-nav__list {
+			display: flex;
+		}
 
 		&__container {
 			@include container-desktop;

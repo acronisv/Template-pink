@@ -2,13 +2,12 @@
     background-image: url('/src/img/back-mobile.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 @media (min-width: 660px) {
 	.main-header {
         background-image: url('/src/img/back-tablet.png');
-        background-size: cover;
     }
 }
 
