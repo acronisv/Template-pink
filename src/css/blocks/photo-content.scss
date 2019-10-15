@@ -90,7 +90,7 @@
 		}
 
 		&__gallery {
-			@include container-tablet
+			@include container-tablet;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;

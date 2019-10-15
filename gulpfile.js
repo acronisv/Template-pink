@@ -4,6 +4,7 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const del = require('del');
+const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 
 const norm = [
@@ -11,11 +12,11 @@ const norm = [
 ];
 
 const sassFiles = [
-	'./src/css/*.scss'
+	'src/css/*.scss'
 ];
 
 const jsFiles = [
-	'./src/js/*.js'
+	'src/js/*.js'
 ];
 
 
@@ -37,6 +38,7 @@ function styles(){
 		}))
 		.pipe(cleanCSS({level: 2}))
 		.pipe(gulp.dest('./build/css'))
+		.pipe(gulp.dest('src/css'))
 		.pipe(browserSync.stream());
 }
 
@@ -47,18 +49,31 @@ function scripts(){
 		.pipe(browserSync.stream());
 }
 
+function html(){
+	return gulp.src('src/*.html')
+	.pipe(gulp.dest('./build'));
+}
+
 function watch(){
 	browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "src/"
 		}
 		//tunnel: true
     });
-	gulp.watch('./src/css/**/*.scss', styles);
-	gulp.watch('./src/js/**/*.js', scripts);
-	gulp.watch('./*.html').on('change', browserSync.reload);
+	gulp.watch('src/css/**/*.scss', styles);
+	gulp.watch('src/js/**/*.js', scripts);
+	gulp.watch('src/*.html').on('change', browserSync.reload);
 }
 
+function image(){
+	return gulp.src('src/img/**/*.*')
+    .pipe(imagemin({
+      optimizationLevel: 3,
+      progressive: true
+    }))
+  .pipe(gulp.dest('./build/img'));
+}
 
 function clean(){
 	return del(['build/*'])
@@ -68,9 +83,15 @@ gulp.task('styles', styles);
 gulp.task('scripts', scripts);
 gulp.task('watch', watch);
 gulp.task('clean', clean);
+gulp.task('image', image);
+gulp.task('html', html);
+
+/*финальная сборка проекта*/
+gulp.task('build', gulp.series('clean', 'html', 'styles', 'scripts', 'image'));
 
 /*сборка с очисткой папки build*/
-gulp.task('build', gulp.series(clean, gulp.parallel(styles, scripts))
+gulp.task('serve', gulp.series(clean, gulp.parallel(styles, scripts))
 					);
 
-gulp.task('dev', gulp.series('build', 'watch'));
+/*запуск проекта в browsersync*/
+gulp.task('dev', gulp.series('serve', 'watch'));

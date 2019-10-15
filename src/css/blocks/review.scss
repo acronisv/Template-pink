@@ -92,7 +92,7 @@
 			margin-right: 29px;
 			display: none;
 			&:checked + .review__label::before{
-				background-image: url(/src/img/tick.png);
+				background-image: url('../img/tick.png');
 				background-repeat: no-repeat;
 				background-position: 50%;
 				border: 2px solid #e5e5e5;
@@ -181,7 +181,7 @@
 			margin-right: 29px;
 			display: none;
 			&:checked + .review__label::before{
-				background-image: url(/src/img/dot.png);
+				background-image: url('../img/dot.png');
 				background-repeat: no-repeat;
 				background-position: 50%;
 				border: 2px solid #e5e5e5;
@@ -464,11 +464,11 @@
 				}
 
 				&--phone::after {
-					background-image: url('/src/img/icon-phone.svg');
+					background-image: url('../img/icon-phone.svg');
 				}
 
 				&--mail::after {
-					background-image: url('/src/img/icon-mail.svg');
+					background-image: url('../img/icon-mail.svg');
 				}
 			}
 		}

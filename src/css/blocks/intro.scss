@@ -1,6 +1,6 @@
 .intro {
 	&__wrap {
-		background-image: url('/src/img/iphone-hand-mobile.png');
+		background-image: url('../img/iphone-hand-mobile.png');
 		height: 667px;
 		background-repeat: no-repeat;
 		background-position-y: 109px;
@@ -41,7 +41,7 @@
 	.intro {
 		&__wrap {
 			@include container-tablet;
-			background-image: url('/src/img/iphone-hand-tablet.png');
+			background-image: url('../img/iphone-hand-tablet.png');
 			height: 617px;
 			background-position-y: bottom;
 			background-position-x: 153px;
@@ -71,7 +71,7 @@
 	.intro {
 		&__wrap {
 			@include container-desktop;
-			background-image: url(/src/img/iphone-hand-desktop@1x.png);
+			background-image: url('../img/iphone-hand-desktop@1x.png');
 			background-size: 109%;
 			background-position-x: 27px;
 			height: auto;
