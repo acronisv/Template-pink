@@ -19,14 +19,6 @@ const jsFiles = [
 	'src/js/*.js'
 ];
 
-
-// gulp.task('sass', function () {
-// 	gulp.src('./sass/**/*.scss')
-// 	  .pipe(sass().on('error', sass.logError))
-// 	  .pipe(gulp.dest('./css'));
-//   });
-
-
 function styles(){
 	return gulp.src(norm)
 		.pipe(gulp.src(sassFiles))
@@ -52,6 +44,11 @@ function scripts(){
 function html(){
 	return gulp.src('src/*.html')
 	.pipe(gulp.dest('./build'));
+}
+
+function fonts(){
+	return gulp.src('src/fonts/*.*')
+	.pipe(gulp.dest('./build/fonts'));
 }
 
 function watch(){
@@ -85,9 +82,10 @@ gulp.task('watch', watch);
 gulp.task('clean', clean);
 gulp.task('image', image);
 gulp.task('html', html);
+gulp.task('fonts', fonts);
 
 /*финальная сборка проекта*/
-gulp.task('build', gulp.series('clean', 'html', 'styles', 'scripts', 'image'));
+gulp.task('build', gulp.series('clean', 'html', 'fonts', 'styles', 'scripts', 'image'));
 
 /*сборка с очисткой папки build*/
 gulp.task('serve', gulp.series(clean, gulp.parallel(styles, scripts))
