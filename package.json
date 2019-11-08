@@ -24,6 +24,14 @@
     "build": "gulp build",
     "start": "gulp serve"
   },
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC"
