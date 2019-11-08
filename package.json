@@ -32,6 +32,9 @@
     "src/img/**/*.svg",
     "src/css/**/*.{sass,scss}"
   ],
+  "engines": {
+    "node": "8.9"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
