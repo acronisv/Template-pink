@@ -1,94 +1,94 @@
 .user-post {
-	background-color: #f2f2f2;
-	padding: 20px 17px;
-	&__header{
-		margin: 0;
-		padding-bottom: 5px;
-		font-size: 15px;
-	}
+  background-color: #f2f2f2;
+  padding: 20px 17px;
+  &__header{
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 15px;
+  }
 
-	&__text {
-		margin: 0;
-		font-size: 15px;
-    	line-height: 24px;
-	}
+  &__text {
+    margin: 0;
+    font-size: 15px;
+      line-height: 24px;
+  }
 
-	&__time {
-		text-transform: uppercase;
-		color: #949aa1;
-		font-weight: normal;
-	}
+  &__time {
+    text-transform: uppercase;
+    color: #949aa1;
+    font-weight: normal;
+  }
 
-	&__row {
-		position: relative;
-		color: #d22856;
-		font-size: 12px;
-		text-transform: uppercase;
-		padding-left: 28px;
-		margin: 15px 0 8px 0;
+  &__row {
+    position: relative;
+    color: #d22856;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-left: 28px;
+    margin: 15px 0 8px 0;
 
-		&::before {
-			content:'';
-			position: absolute;
-			left: 0;
-			width: 13px;
-			height: 13px;
-			background-image: url('../img/like-icon.png');
-		}
-	}
+    &::before {
+      content:'';
+      position: absolute;
+      left: 0;
+      width: 13px;
+      height: 13px;
+      background-image: url('../img/like-icon.png');
+    }
+  }
 }
 
 @media (min-width: 660px) {
-	.user-post {
-		padding: 27px;
-		display: flex;
-		flex-wrap: wrap;
+  .user-post {
+    padding: 27px;
+    display: flex;
+    flex-wrap: wrap;
 
-		&__time {
-			font-size: 12px;
-		}
-		&__row {
-			&::before {
-				left: auto;
-				right: 0;
-			}
-		}
-	}
+    &__time {
+      font-size: 12px;
+    }
+    &__row {
+      &::before {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
 
-	.photo-content__gallery {
-		.user-post {
-			min-height: 102px;
-			&__footer {
-				width: 100%;
-			}
+  .photo-content__gallery {
+    .user-post {
+      min-height: 102px;
+      &__footer {
+        width: 100%;
+      }
 
-			&__row {
-				padding-left: 0;
-				margin-top: 19px;
-				margin-bottom: 0;
-			}
-		}
-	}
+      &__row {
+        padding-left: 0;
+        margin-top: 19px;
+        margin-bottom: 0;
+      }
+    }
+  }
 
-	.photo-content__main-post {
-		.user-post {
-			&__row {
-				padding-right: 25px;
-				margin: 5px 0;
+  .photo-content__main-post {
+    .user-post {
+      &__row {
+        padding-right: 25px;
+        margin: 5px 0;
 
-			}
-			&__header {
-				order: 0;
-				margin-right: auto;
-			}
+      }
+      &__header {
+        order: 0;
+        margin-right: auto;
+      }
 
-			&__text {
-				order:2;
-			}
+      &__text {
+        order:2;
+      }
 
-			&__footer {
-				order: 1;
-			}
-		}
-	}
+      &__footer {
+        order: 1;
+      }
+    }
+  }
 }

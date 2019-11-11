@@ -88,8 +88,7 @@ gulp.task('fonts', fonts);
 gulp.task('build', gulp.series('clean', 'html', 'fonts', 'styles', 'scripts', 'image'));
 
 /*сборка с очисткой папки build*/
-gulp.task('serve', gulp.series(clean, gulp.parallel(styles, scripts))
-					);
+gulp.task('serve', gulp.series(clean, gulp.parallel(styles, scripts)));
 
 /*запуск проекта в browsersync*/
 gulp.task('dev', gulp.series('serve', 'watch'));
