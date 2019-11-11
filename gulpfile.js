@@ -8,63 +8,63 @@ const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 
 const norm = [
-	'./node_modules/normalize.css/normalize.css',
+  './node_modules/normalize.css/normalize.css',
 ];
 
 const sassFiles = [
-	'src/css/*.scss'
+  'src/css/*.scss'
 ];
 
 const jsFiles = [
-	'src/js/*.js'
+  'src/js/*.js'
 ];
 
 function styles(){
-	return gulp.src(norm)
-		.pipe(gulp.src(sassFiles))
-		.pipe(sass())
-		.pipe(concat('template.css'))
-		.pipe(autoprefixer({
-			browsers: ['last 2 versions'],
-			cascade: false
-		}))
-		.pipe(cleanCSS({level: 2}))
-		.pipe(gulp.dest('./build/css'))
-		.pipe(gulp.dest('src/css'))
-		.pipe(browserSync.stream());
+  return gulp.src(norm)
+    .pipe(gulp.src(sassFiles))
+    .pipe(sass())
+    .pipe(concat('template.css'))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(cleanCSS({level: 2}))
+    .pipe(gulp.dest('./build/css'))
+    .pipe(gulp.dest('src/css'))
+    .pipe(browserSync.stream());
 }
 
 function scripts(){
-	return gulp.src(jsFiles)
-		.pipe(concat('main.js'))
-		.pipe(gulp.dest('./build/js'))
-		.pipe(browserSync.stream());
+  return gulp.src(jsFiles)
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('./build/js'))
+    .pipe(browserSync.stream());
 }
 
 function html(){
-	return gulp.src('src/*.html')
-	.pipe(gulp.dest('./build'));
+  return gulp.src('src/*.html')
+  .pipe(gulp.dest('./build'));
 }
 
 function fonts(){
-	return gulp.src('src/fonts/*.*')
-	.pipe(gulp.dest('./build/fonts'));
+  return gulp.src('src/fonts/*.*')
+  .pipe(gulp.dest('./build/fonts'));
 }
 
 function watch(){
-	browserSync.init({
+  browserSync.init({
         server: {
             baseDir: "src/"
-		}
-		//tunnel: true
+    }
+    //tunnel: true
     });
-	gulp.watch('src/css/**/*.scss', styles);
-	gulp.watch('src/js/**/*.js', scripts);
-	gulp.watch('src/*.html').on('change', browserSync.reload);
+  gulp.watch('src/css/**/*.scss', styles);
+  gulp.watch('src/js/**/*.js', scripts);
+  gulp.watch('src/*.html').on('change', browserSync.reload);
 }
 
 function image(){
-	return gulp.src('src/img/**/*.*')
+  return gulp.src('src/img/**/*.*')
     .pipe(imagemin({
       optimizationLevel: 3,
       progressive: true
@@ -73,7 +73,7 @@ function image(){
 }
 
 function clean(){
-	return del(['build/*'])
+  return del(['build/*'])
 }
 
 gulp.task('styles', styles);
