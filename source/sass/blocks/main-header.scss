@@ -6,13 +6,13 @@
 }
 
 @media (min-width: 660px) {
-	.main-header {
+  .main-header {
         background-image: url('../img/back-tablet.png');
     }
 }
 
 @media (min-width: 1200px) {
-	.main-header {
+  .main-header {
         background-image: url('../img/back-desktop.png');
         background-position: initial;
     }

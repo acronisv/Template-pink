@@ -1,0 +1,77 @@
+.reviews {
+  background-image: url('../img/bg-triangle-white.svg');
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  padding: 0 20px 70px 20px;
+  &__name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    margin: 0;
+    padding-top: 48px;
+  }
+
+  &__text {
+    text-align: center;
+    line-height: 30px;
+    margin: 16px 0;
+  }
+
+  &__note {
+    display: none;
+  }
+}
+
+@media (min-width: 660px) {
+  .reviews {
+    padding-top: 83px;
+    padding-bottom: 62px;
+    &__item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__text {
+      font-size: 19px;
+      order: 0;
+    }
+
+    &__name {
+      font-size: 21px;
+      padding-top: 22px;
+      order: 1;
+    }
+
+    &__note {
+      display: block;
+      order: 2;
+      text-align: center;
+      margin-top: 11px;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .reviews {
+    @include container-desktop;
+    background-image: url('../img/quote.png');
+    background-position: 50% 74px;
+    padding-top: 170px;
+    padding-bottom: 23px;
+
+    &__item {
+      width: 700px;
+      margin: 0 auto;
+    }
+
+    &__name {
+      font-size: 26px;
+    }
+
+    &__note {
+      font-size: 19px;
+      margin-top: 6px;
+    }
+  }
+}

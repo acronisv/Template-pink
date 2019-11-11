@@ -1,0 +1,190 @@
+.price-table {
+  width: 840px;
+  margin-bottom: 42px;
+  &__head {
+    height: 98px;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.8em;
+  }
+
+  &__header {
+    background-color: #283645;
+  }
+
+  &__header--hit {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__header--hit::before {
+    content: "ХИТ";
+    width: 100px;
+    height: 30px;
+    background-color: #d22856;
+    position: absolute;
+    left: -27px;
+    top: 10px;
+    font-size: 14px;
+    transform: rotate(-45deg);
+
+  }
+
+  &__price {
+    font-size: 24px;
+      font-weight: normal;
+  }
+
+  &__cell {
+    width: 280px;
+    height: 58px;
+    text-align: left;
+    padding-left: 24px;
+    background: #ffffff;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  &__cell--hidden, &__header--hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__icon-ok {
+    fill: #3dc644;
+    width: 32px;
+    height: 22px;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+  }
+
+  &__icon-nope {
+    fill: #f25b26;
+    width: 26px;
+    height: 26px;
+    right: 20px;
+    top: 15px;
+    position: absolute;
+  }
+}
+
+.price__controls {
+  .price__btn {
+    margin: 0 8px;
+  }
+
+}
+
+@media (min-width: 660px) {
+  .price-table {
+    width: 620px;
+    margin-bottom: 0;
+    &__head {
+      height: 80px;
+      font-size: 16px;
+    }
+
+    &__header--hit::before {
+      height: 27px;
+      left: -31px;
+      top: 5px;
+    }
+
+    &__price {
+      font-size: 18px;
+    }
+
+    &__cell {
+      height: 45px;
+      width: 153px;
+      padding-left: 16px;
+      text-transform: none;
+    }
+
+    &__cell--hidden {
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 0;
+      border: none;
+      background-color: #fff;
+    }
+
+    &__icon-ok, &__icon-nope {
+      position: static;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__cell--ok, &__cell--nope {
+      font-size: 0;
+      padding-left: 0;
+    }
+
+    &__header--hidden {
+      display: block;
+      position: absolute;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  .price__controls {
+    display: none;
+  }
+
+  .price__container {
+    @include container-tablet;
+  }
+}
+
+@media (min-width: 1200px) {
+  .price__container {
+    @include container-desktop;
+  }
+  .price-table {
+    width: 100%;
+    &__head {
+      height: 99px;
+      font-size: 18px;
+    }
+
+    &__price {
+      font-size: 22px;
+    }
+
+    &__row {
+      height: 58px;
+    }
+
+    &__cell {
+      width: 234px;
+      font-size: 19px;
+      padding-left: 20px;
+    }
+
+    &__cell--ok, &__cell--nope {
+      font-size: 0;
+      padding-left: 0;
+    }
+
+    &__header--hit::before {
+      height: 31px;
+      left: -25px;
+      top: 13px;
+    }
+  }
+}

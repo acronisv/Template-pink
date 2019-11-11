@@ -62,7 +62,6 @@
                 </g>
             </g>
         </symbol>
-        
         <symbol viewBox="0 0 146.3 40.375" id="logo-pink-footer">
             <g>
                 <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"></path>
@@ -103,12 +102,6 @@
         <symbol viewBox="0 0 16 16" id="icon-github">
             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
         </symbol>
-        <symbol viewBox="-82.357 4.875 21.698 16.09" id="icon-ok">
-            <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.09 C-60.562,6.191-60.562,5.558-60.953,5.167z"></path>
-        </symbol>
-        <symbol viewBox="0 0 26.752 26.752" id="icon-nope">
-            <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"></path>
-        </symbol>
     </svg>
     <header class="main-header">
         <nav class="main-nav main-nav__hidden">
@@ -122,10 +115,10 @@
                     <button class="main-nav__toggle-menu-button"></button>
                 </div>
                 <ul class="main-nav__list">
-                    <li class="main-nav__list-item main-nav__list-item--active">
+                    <li class="main-nav__list-item">
                         <a class="main-nav__link" href="index.html">Главная</a>
                     </li>
-                    <li class="main-nav__list-item">
+                    <li class="main-nav__list-item main-nav__list-item--active">
                         <a class="main-nav__link" href="photos.html">Фотографии</a>
                     </li>
                     <li class="main-nav__list-item">
@@ -138,175 +131,177 @@
             </div>
         </nav>
         <section class="intro">
-            <div class="intro__wrap">
-                <div class="intro__text">
-                    <div class="intro__app-download app-stores">
-                        <h2 class="app-stores__header">Взгляните на жизнь иначе!</h2>
-                        <a class="app-stores__download-button" href="/">Скачать приложение</a>
-                        <div class="app-stores__icons">
-                            <div class="app-stores__icon app-stores__icon--apple">
-                                <img src="./img/apple-logo.png" alt="App store">
-                            </div>
-                            <div class="app-stores__icon app-stores__icon--android">
-                                <img src="./img/android-logo.png" alt="Play market">
-                            </div>
-                            <div class="app-stores__icon app-stores__icon--microsoft">
-                                <img src="./img/microsoft-logo.png" alt="Microsoft store">
-                            </div>
-                        </div>
-                        <p class="app-stores__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-                    </div>
-                </div>
+            <div class="intro__wrap intro__wrap--no-index">
+                <h1 class="intro__header">Фотографии пользователей</h1>
             </div>
         </section>
     </header>
     <main class="page-main">
-        <section class="offer">
-            <h2 class="offer__header">
-                <span class="offer__slogan">Устали от серости мегаполиса?</span>
-                <span class="offer__slogan">Нам есть, что вам<br>предложить!</span>
-            </h2>
-            <div class="offer__wrap">
-                <div class="offer__container">
-                    <div class="offer__functions features">
-                        <div class="features__item">
-                            <div class="features__heading">Поднимает настроение</div>
-                            <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                        </div>
-                        <div class="features__item">
-                            <div class="features__heading">Меняет мир вокруг</div>
-                            <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                        </div>
-                        <div class="features__item">
-                            <div class="features__heading">Заводит новых друзей</div>
-                            <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                        </div>
-                    </div>
-                    <div class="offer__pics">
-                        <div class="offer__pic offer__pic--gray">
-                            <picture>
-                                <source media="(min-width:1200px)" srcset="./img/iphone-screen-gray-desktop@1x.png 1x, /img/iphone-screen-pink-desktop@2x.png 2x">
-                                <img src="./img/iphone-screen-gray-desktop@1x.png" alt="">
-                            </picture>
-                        </div>
-                        <div class="offer__pic offer__pic--pink">
-                            <picture>
-                                <source media="(min-width:1200px)" srcset="./img/iphone-screen-pink-desktop@1x.png 1x, /img/iphone-screen-pink-desktop@2x.png 2x">
-                                <img src="./img/iphone-screen-pink-desktop@1x.png" alt="">
-                            </picture>
-                        </div>
-                        <div class="offer__pic offer__pic--pink-text">
-                            <picture>
-                                <source media="(min-width:1200px)" srcset="./img/iphone-screen-text-desktop@1x.png 1x, /img/iphone-screen-text-desktop@2x.png 2x">
-                                <img src="./img/iphone-screen-text-desktop@1x.png" alt="">
-                            </picture>
-                        </div>
-                    </div>
+        <section class="photo-content">
+            <h2 class="visually-hidden">Фото контент</h2>
+            <div class="photo-content__intro">
+                <p class="photo-content__text">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</p>
+            </div>
+            <div class="photo-content__main-post">
+                <div class="photo-content__main-image">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="./img/panorama-desktop@1x.jpg 1x, /img/panorama-desktop@2x.jpg 2x">
+                        <source media="(min-width:660px)" srcset="./img/panorama-tablet@1x.jpg 1x, /img/panorama-tablet@2x.jpg 2x">
+                        <img class="photo-content__background-image" src="./img/panorama-mobile.png" alt="Панорама дня">
+                    </picture>
+                </div>
+                <article class="photo-content__comment-wrap user-post">
+                    <h4 class="user-post__header">Анна<span class="user-post__time"> (5 минут назад)</span></h4>
+                    <p class="user-post__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                    <footer class="user-post__footer">
+                        <p class="user-post__row">Нравится: <span class="user-post__counter">215</span></p>
+                    </footer>
+                </article>
+            </div>
+            <div class="photo-content__gallery">
+                <div class="photo-content__gallery-item">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="./img/gallery-img1-desktop@1x.jpg 1x, /img/gallery-img1-desktop@2x.jpg 2x">
+                        <source media="(min-width:660px)" srcset="./img/gallery-img1-tablet@1x.jpg 1x, /img/gallery-img1-tablet@2x.jpg 2x">
+                        <img class="photo-content__image" src="./img/gallery-img1.png" alt="Автомобиль">
+                    </picture>
+                    <article class="photo-content__comment-wrap user-post">
+                        <h4 class="user-post__header">Левон<span class="user-post__time"> (5 часов назад)</span></h4>
+                        <p class="user-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                        <footer class="user-post__footer">
+                            <p class="user-post__row">Нравится: <span class="user-post__counter">215</span></p>
+                        </footer>
+                    </article>
+                </div>
+                <div class="photo-content__gallery-item">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="./img/gallery-img2-desktop@1x.jpg 1x, /img/gallery-img2-desktop@2x.jpg 2x">
+                        <source media="(min-width:660px)" srcset="./img/gallery-img2-tablet@1x.jpg 1x, /img/gallery-img2-tablet@2x.jpg 2x">
+                        <img class="photo-content__image" src="./img/gallery-img2.png" alt="Инструменты">
+                    </picture>
+                    <article class="photo-content__comment-wrap user-post">
+                        <h4 class="user-post__header">Антон<span class="user-post__time"> (12 часов назад)</span></h4>
+                        <p class="user-post__text">Соседи будут рады</p>
+                        <footer class="user-post__footer">
+                            <p class="user-post__row">Нравится: <span class="user-post__counter">215</span></p>
+                        </footer>
+                    </article>
+                </div>
+                <div class="photo-content__gallery-item">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="./img/gallery-img3-desktop@1x.jpg 1x, /img/gallery-img3-desktop@2x.jpg 2x">
+                        <source media="(min-width:660px)" srcset="./img/gallery-img3-tablet@1x.jpg 1x, /img/gallery-img3-tablet@2x.jpg 2x">
+                        <img class="photo-content__image" src="./img/gallery-img3.png" alt="Здание">
+                    </picture>
+                    <article class="photo-content__comment-wrap user-post">
+                        <h4 class="user-post__header">Борис<span class="user-post__time"> (20 часов назад)</span></h4>
+                        <p class="user-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                        <footer class="user-post__footer">
+                            <p class="user-post__row">Нравится: <span class="user-post__counter">215</span></p>
+                        </footer>
+                    </article>
+                </div>
+                <div class="photo-content__gallery-item">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="./img/gallery-img4-desktop@1x.jpg 1x, /img/gallery-img4-desktop@2x.jpg 2x">
+                        <source media="(min-width:660px)" srcset="./img/gallery-img4-tablet@1x.jpg 1x, /img/gallery-img4-tablet@2x.jpg 2x">
+                        <img class="photo-content__image" src="./img/gallery-img4.png" alt="Бахча">
+                    </picture>
+                    <article class="photo-content__comment-wrap user-post">
+                        <h4 class="user-post__header">Сергей<span class="user-post__time"> (25 часов назад)</span></h4>
+                        <p class="user-post__text">Самая кубанская в мире!</p>
+                        <footer class="user-post__footer">
+                            <p class="user-post__row">Нравится: <span class="user-post__counter">215</span></p>
+                        </footer>
+                    </article>
+                </div>
+                <div class="photo-content__gallery-item">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="./img/gallery-img5-desktop@1x.jpg 1x, /img/gallery-img5-desktop@2x.jpg 2x">
+                        <source media="(min-width:660px)" srcset="./img/gallery-img5-tablet@1x.jpg 1x, /img/gallery-img5-tablet@2x.jpg 2x">
+                        <img class="photo-content__image" src="./img/gallery-img5.png" alt="Природа">
+                    </picture>
+                    <article class="photo-content__comment-wrap user-post">
+                        <h4 class="user-post__header">Максим<span class="user-post__time">(40 часов назад)</span></h4>
+                        <p class="user-post__text">Где снег-то?</p>
+                        <footer class="user-post__footer">
+                            <p class="user-post__row">Нравится: <span class="user-post__counter">215</span></p>
+                        </footer>
+                    </article>
+                </div>
+                <div class="photo-content__gallery-item">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="./img/gallery-img6-desktop@1x.jpg 1x, /img/gallery-img6-desktop@2x.jpg 2x">
+                        <source media="(min-width:660px)" srcset="./img/gallery-img6-tablet@1x.jpg 1x, /img/gallery-img6-tablet@2x.jpg 2x">
+                        <img class="photo-content__image" src="./img/gallery-img6.png" alt="Полет">
+                    </picture>
+                    <article class="photo-content__comment-wrap user-post">
+                        <h4 class="user-post__header">Надежда<span class="user-post__time">(45 часов назад)</span></h4>
+                        <p class="user-post__text">Всем GM и взаимные лайки</p>
+                        <footer class="user-post__footer">
+                            <p class="user-post__row">Нравится: <span class="user-post__counter">215</span></p>
+                        </footer>
+                    </article>
                 </div>
             </div>
         </section>
-        <section class="research">
-            <div class="research__container">
-                <div class="research__wrap">
-                    <h2 class="research__heading">Эффект на 24 часа!</h2>
-                    <div class="research__text">Британские ученые провели исследования
-                            и доказали, что положительный эффект
-                            от использования приложения длится 
-                            целые сутки!
+        <section class="photo-upload">
+            <h2 class="visually-hidden">Загрузка фотографий</h2>
+            <p class="photo-upload__text">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+            <div class="photo-upload__container">
+                <div class="photo-upload__area">
+                    <img class="photo-upload__image" src="./img/upload-photo.png" alt="Загрузка фотографий">
+                    <div class="photo-upload__controls photo-upload__controls--mobile">
+                        <div class="photo-upload__snaps">
+                            <button class="photo-upload__snap photo-upload__snap--active">
+                                <svg class="crop" width="49" height="48"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop"></use></svg>
+                            </button>
+                            <button class="photo-upload__snap">
+                                <svg class="fill" width="49" height="48"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill"></use></svg>
+                            </button>
+                            <button class="photo-upload__snap">
+                                <svg class="photo-upload__snap-contrast" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#contrast"></use></svg>
+                            </button>
+                        </div>
+                        <div class="photo-upload__slides">
+                            <input class="photo-upload__slide" type="range" min="0" max="100" step="1">
+                        </div>
+                        <div class="photo-upload__buttons">
+                            <input class="photo-upload__button photo-upload__button--upload" type="submit" value="Запостить">
+                            <input class="photo-upload__button photo-upload__button--cancel" type="submit" value="Отмена">
+                        </div>
+                    </div>
+                    <div class="photo-upload__controls photo-upload__controls--tablet">
+                        <div class="photo-upload__snaps">
+                            <div class="photo-upload__line">
+                                <button class="photo-upload__snap photo-upload__snap--active">
+                                    <svg class="photo-upload__snap-crop" width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#crop"></use></svg>
+                                </button>
+                                <input class="photo-upload__slide" type="range" min="0" max="100" step="1">
                             </div>
-                    <a class="research__link" href="#">Узнать больше об исследовании</a>
-                </div>
-            </div>
-        </section>
-        <section class="reviews">
-            <h2 class="visually-hidden">Отзывы</h2>
-            <div class="reviews__item">
-                <p class="reviews__name">Николай Петров</p>
-                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                <p class="reviews__note">25 лет, водитель трамвая</p>
-            </div>
-        </section>
-        <section class="price">
-            <h2 class="visually-hidden">Прайс-лист</h2>
-            <div class="price__container">
-                <input type="radio" class="price__switcher" name="switcher" id="price__switcher-1">
-                <input checked type="radio" class="price__switcher" name="switcher" id="price__switcher-2">
-                <input type="radio" class="price__switcher" name="switcher" id="price__switcher-3">
-                <table class="price__table price-table">
-                    <tr class="price-table__head">
-                        <th class="price-table__header price-table__header--hidden"></th>
-                        <th class="price-table__header">База<br><span class="price-table__price">1.99 USD</span></th>
-                        <th class="price-table__header price-table__header--hit">Стандарт<br><span class="price-table__price">3.99 USD</span></th>
-                        <th class="price-table__header">Анлим<br><span class="price-table__price">9.99 USD</span></th>
-                    </tr>
-                    <tr class="price-table__row">
-                        <td class="price-table__cell price-table__cell--hidden">Розовый фильтр</td>
-                        <td class="price-table__cell price-table__cell--ok">Розовый фильтр
-                            <svg class="price-table__icon-ok"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ok"></use></svg>
-                        </td>
-                        <td class="price-table__cell price-table__cell--ok">Розовый фильтр
-                            <svg class="price-table__icon-ok"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ok"></use></svg>
-                        </td>
-                        <td class="price-table__cell price-table__cell--ok">Розовый фильтр
-                            <svg class="price-table__icon-ok"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ok"></use></svg>
-                        </td>
-                    </tr>
-                    <tr class="price-table__row">
-                        <td class="price-table__cell price-table__cell--hidden">Смайлики</td>
-                        <td class="price-table__cell price-table__cell--nope">Смайлики
-                            <svg class="price-table__icon-nope"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-nope"></use></svg>
-                        </td>
-                        <td class="price-table__cell price-table__cell--ok">Смайлики
-                            <svg class="price-table__icon-ok"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ok"></use></svg>
-                        </td>
-                        <td class="price-table__cell price-table__cell--ok">Смайлики
-                            <svg class="price-table__icon-ok"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ok"></use></svg>
-                        </td>
-                    </tr>
-                    <tr class="price-table__row">
-                        <td class="price-table__cell price-table__cell--hidden">Комментарии</td>
-                        <td class="price-table__cell price-table__cell--nope">Комментарии
-                            <svg class="price-table__icon-nope"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-nope"></use></svg>
-                        </td>
-                        <td class="price-table__cell price-table__cell--nope">Комментарии
-                            <svg class="price-table__icon-nope"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-nope"></use></svg>
-                        </td>
-                        <td class="price-table__cell price-table__cell--ok">Комментарии
-                            <svg class="price-table__icon-ok"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ok"></use></svg>
-                        </td>
-                    </tr>  
-                </table>
-                <div class="price__controls">
-                    <label for="price__switcher-1" class="price__btn"></label>    
-                    <label for="price__switcher-2" class="price__btn"></label>    
-                    <label for="price__switcher-3" class="price__btn"></label>    
+                            <div class="photo-upload__line">
+                                <button class="photo-upload__snap photo-upload__snap--active">
+                                    <svg class="photo-upload__snap-fill" width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill"></use></svg>
+                                </button>
+                                <input class="photo-upload__slide" type="range" min="0" max="100" step="1">
+                            </div>
+                            <div class="photo-upload__line">
+                                <button class="photo-upload__snap photo-upload__snap--active">
+                                    <svg class="photo-upload__snap-contrast" width="18" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#contrast"></use></svg>
+                                </button>
+                                <input class="photo-upload__slide" type="range" min="0" max="100" step="1">
+                            </div>
+                        </div>
+                        <div class="photo-upload__buttons">
+                            <input class="photo-upload__button photo-upload__button--upload" type="submit" value="Запостить">
+                            <input class="photo-upload__button photo-upload__button--cancel" type="submit" value="Отмена">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="contacts">
-        <h2 class="contacts__main-header">Остались вопросы?<br>Свяжитесь с нами!</h2>
-        <div class="contacts__text-block">
-            <div class="contacts__text-wrap">
-                <p class="contacts__header">Звоните:</p>
-                <a class="contacts__text" href="tel:+78125556666">+7(812)555-66-66</a>
-            </div>
-            <div class="contacts__text-wrap">
-                <p class="contacts__header">Пишите:</p>
-                <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </div>
-            <div class="contacts__text-wrap">
-                <p class="contacts__header">Приезжайте в гости:</p>
-                <address class="contacts__text">ул.Большая<br>Конюшенная, 19/8</address>
-            </div>
-        </div>
-        <div class="contacts__map">
-            <picture>
-                <source media="(min-width:1280px)" srcset="./img/map-desktop@1x.jpg 1x, /img/map-desktop@2x.jpg 2x">
-                <source media="(min-width:660px)" srcset="./img/map-tablet@1x.jpg 1x, /img/map-tablet@2x.jpg 2x">
-                <img class="contacts__image" src="./img/map-mobile.png" alt="Карта">
-            </picture>
-        </div>
+    <footer class="contacts contacts--no-index">
         <div class="contacts__wrap">
             <div class="contacts__logo">
                     <svg class="contacts__logo-footer"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-footer"></use></svg>
@@ -322,7 +317,6 @@
                         <a class="social-icons__link" href="#">
                             <svg class="contrast" width="20" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg>
                         </a>
-                            
                     </li>
                     <li class="social-icons__item">
                         <a class="social-icons__link" href="#">
