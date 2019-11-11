@@ -30,9 +30,9 @@
   "editorconfig-cli": [
     "*.json",
     "*.js",
-    "src/*.html",
-    "src/js/**/*.js",
-    "src/css/**/*.{sass,scss}"
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "8.9"
