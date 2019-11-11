@@ -6,12 +6,12 @@
 		background-position-y: 109px;
 		position: relative;
 		//@include container-mobile;
-	} 
+	}
 
 	&__header {
 		margin: 0;
 	}
-	
+
 	&__text {
 		background-color: #1d2631;
 		padding: 28px 0px 17px;
@@ -46,7 +46,7 @@
 			background-position-y: bottom;
 			background-position-x: 153px;
     		background-size: 487px auto;
-		} 
+		}
 
 		&__text {
 			@include container-tablet;

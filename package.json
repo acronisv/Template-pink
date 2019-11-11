@@ -10,14 +10,15 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
-    "editorconfig": "^0.15.3",
-    "editorconfig-cli": "^0.3.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^6.1.1",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "editorconfig-cli": "^0.3.0",
+    "stylelint": "8.4.x",
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",

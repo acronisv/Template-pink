@@ -50,7 +50,7 @@
 		&__row {
 			&::before {
 				left: auto;
-				right: 0;	
+				right: 0;
 			}
 		}
 	}
@@ -61,7 +61,7 @@
 			&__footer {
 				width: 100%;
 			}
-	
+
 			&__row {
 				padding-left: 0;
 				margin-top: 19px;
@@ -71,7 +71,7 @@
 	}
 
 	.photo-content__main-post {
-		.user-post {	
+		.user-post {
 			&__row {
 				padding-right: 25px;
 				margin: 5px 0;
@@ -81,11 +81,11 @@
 				order: 0;
 				margin-right: auto;
 			}
-	
+
 			&__text {
 				order:2;
 			}
-	
+
 			&__footer {
 				order: 1;
 			}
