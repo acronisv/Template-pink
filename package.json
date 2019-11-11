@@ -16,7 +16,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^6.1.1",
     "gulp-sass": "^4.0.2",
-    "editorconfig-cli": "^0.3.0",
+    "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "8.4.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
