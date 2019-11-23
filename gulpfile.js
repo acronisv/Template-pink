@@ -12,7 +12,7 @@ const norm = [
 ];
 
 const sassFiles = [
-  'src/css/*.scss'
+  'src/sass/*.scss'
 ];
 
 const jsFiles = [
@@ -58,7 +58,7 @@ function watch(){
     }
     //tunnel: true
     });
-  gulp.watch('src/css/**/*.scss', styles);
+  gulp.watch('src/sass/**/*.scss', styles);
   gulp.watch('src/js/**/*.js', scripts);
   gulp.watch('src/*.html').on('change', browserSync.reload);
 }
