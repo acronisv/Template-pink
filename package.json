@@ -22,7 +22,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"src/css/**/*.scss\" —syntax scss",
+    "stylelint": "stylelint \"source/css/**/*.scss\" —syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp serve"
