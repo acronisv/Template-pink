@@ -1,6 +1,6 @@
 .intro {
   &__wrap {
-    background-image: url('../img/iphone-hand-mobile.png');
+    background-image: url("../img/iphone-hand-mobile.png");
     height: 667px;
     background-repeat: no-repeat;
     background-position-y: 109px;
@@ -14,7 +14,7 @@
 
   &__text {
     background-color: #1d2631;
-    padding: 28px 0px 17px;
+    padding: 28px 0 17px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -41,11 +41,11 @@
   .intro {
     &__wrap {
       @include container-tablet;
-      background-image: url('../img/iphone-hand-tablet.png');
+      background-image: url("../img/iphone-hand-tablet.png");
       height: 617px;
       background-position-y: bottom;
       background-position-x: 153px;
-        background-size: 487px auto;
+      background-size: 487px auto;
     }
 
     &__text {
@@ -59,6 +59,7 @@
   .intro__wrap--no-index {
     height: 328px;
     background-image: none;
+
     .intro__header {
       padding-top: 72px;
       max-width: 500px;
@@ -71,13 +72,15 @@
   .intro {
     &__wrap {
       @include container-desktop;
-      background-image: url('../img/iphone-hand-desktop@1x.png');
+      background-image: url("../img/iphone-hand-desktop@1x.png");
       background-size: 109%;
       background-position-x: 27px;
       height: auto;
+
       &--no-index {
         min-height: 284px;
         background-image: none;
+
         .intro__header--form {
           max-width: 100%;
         }
@@ -87,6 +90,5 @@
     &__text {
       margin: 0;
     }
-
   }
 }

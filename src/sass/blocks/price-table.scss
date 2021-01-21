@@ -1,6 +1,7 @@
 .price-table {
   width: 840px;
   margin-bottom: 42px;
+
   &__head {
     height: 98px;
     color: #ffffff;
@@ -29,12 +30,11 @@
     top: 10px;
     font-size: 14px;
     transform: rotate(-45deg);
-
   }
 
   &__price {
     font-size: 24px;
-      font-weight: normal;
+    font-weight: normal;
   }
 
   &__cell {
@@ -48,7 +48,8 @@
     position: relative;
   }
 
-  &__cell--hidden, &__header--hidden {
+  &__cell--hidden,
+  &__header--hidden {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
@@ -81,13 +82,13 @@
   .price__btn {
     margin: 0 8px;
   }
-
 }
 
 @media (min-width: 660px) {
   .price-table {
     width: 620px;
     margin-bottom: 0;
+
     &__head {
       height: 80px;
       font-size: 16px;
@@ -116,16 +117,18 @@
       height: auto;
       margin: 0;
       border: none;
-      background-color: #fff;
+      background-color: #ffffff;
     }
 
-    &__icon-ok, &__icon-nope {
+    &__icon-ok,
+    &__icon-nope {
       position: static;
       display: block;
       margin: 0 auto;
     }
 
-    &__cell--ok, &__cell--nope {
+    &__cell--ok,
+    &__cell--nope {
       font-size: 0;
       padding-left: 0;
     }
@@ -155,8 +158,10 @@
   .price__container {
     @include container-desktop;
   }
+
   .price-table {
     width: 100%;
+
     &__head {
       height: 99px;
       font-size: 18px;
@@ -176,7 +181,8 @@
       padding-left: 20px;
     }
 
-    &__cell--ok, &__cell--nope {
+    &__cell--ok,
+    &__cell--nope {
       font-size: 0;
       padding-left: 0;
     }

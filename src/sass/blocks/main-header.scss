@@ -1,19 +1,19 @@
 .main-header {
-    background-image: url('../img/back-mobile.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: url("../img/back-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (min-width: 660px) {
   .main-header {
-        background-image: url('../img/back-tablet.png');
-    }
+    background-image: url("../img/back-tablet.png");
+  }
 }
 
 @media (min-width: 1200px) {
   .main-header {
-        background-image: url('../img/back-desktop.png');
-        background-position: initial;
-    }
+    background-image: url("../img/back-desktop.png");
+    background-position: initial;
+  }
 }

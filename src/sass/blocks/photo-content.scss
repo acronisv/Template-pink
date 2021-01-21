@@ -22,17 +22,22 @@
 
   &__main-post {
     margin-bottom: 18px;
+
+    .photo-content__comment-wrap {
+      margin: 0 20px;
+    }
   }
 
   &__main-image {
     position: relative;
     margin: 0 auto;
+
     &::before {
       position: absolute;
-      content: 'Панорама дня';
+      content: "Панорама дня";
       background: #d22856;
       top: 0;
-      color: #fff;
+      color: #ffffff;
       text-transform: uppercase;
       font-size: 12px;
       text-align: center;
@@ -55,25 +60,21 @@
   &__gallery-item {
     margin-bottom: 18px;
   }
-
-  &__main-post {
-    .photo-content__comment-wrap {
-      margin: 0 20px;
-    }
-  }
 }
 
 @media (min-width: 660px) {
   .photo-content {
     &__main-post {
       margin-bottom: 45px;
+
       .photo-content__comment-wrap {
         @include container-tablet;
         padding-left: 30px;
-          padding-right: 30px;
+        padding-right: 30px;
         box-sizing: border-box;
       }
     }
+
     &__text {
       margin: 0 auto;
       font-size: 20px;
@@ -83,6 +84,7 @@
 
     &__main-image {
       max-width: none;
+
       &::before {
         top: 57px;
         right: 40px;
@@ -104,7 +106,7 @@
 
 @media (min-width: 1200px) {
   .photo-content {
-    &__intro{
+    &__intro {
       min-height: 240px;
     }
 
@@ -114,6 +116,7 @@
 
     &__main-image {
       max-width: none;
+
       &::before {
         top: 54px;
         right: 129px;
@@ -124,12 +127,13 @@
       .photo-content__comment-wrap {
         @include container-desktop;
         padding-left: 30px;
-          padding-right: 30px;
+        padding-right: 30px;
       }
     }
 
     &__gallery {
       @include container-desktop;
+
       &-item {
         margin-bottom: 52px;
       }

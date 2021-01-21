@@ -5,9 +5,10 @@
 @media (min-width: 660px) {
   .research {
     display: block;
-    &__container{
+
+    &__container {
       @include container-tablet;
-      background-image: url('../img/timer.png');
+      background-image: url("../img/timer.png");
       background-repeat: no-repeat;
       background-position: 0 100%;
       padding-bottom: 30px;

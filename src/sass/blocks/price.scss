@@ -1,5 +1,5 @@
 .price {
-  background-image: url('../img/bg-triangle-white.svg');
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: 100% 0;
   background-color: #f2f2f2;
@@ -30,23 +30,27 @@
     display: none;
   }
 }
-#price__switcher-1:checked~.price-table {
+
+#price__switcher-1:checked ~ .price-table {
   transform: translateX(280px);
-    transition: 0.5s;
+  transition: 0.5s;
 }
-#price__switcher-2:checked~.price-table {
-  transform: translateX(0px);
-    transition: 0.5s;
+
+#price__switcher-2:checked ~ .price-table {
+  transform: translateX(0);
+  transition: 0.5s;
 }
-#price__switcher-3:checked~.price-table {
+
+#price__switcher-3:checked ~ .price-table {
   transform: translateX(-280px);
-    transition: 0.5s;
+  transition: 0.5s;
 }
-#price__switcher-1:checked~.price__controls label[for=price__switcher-1],
-#price__switcher-2:checked~.price__controls label[for=price__switcher-2],
-#price__switcher-3:checked~.price__controls label[for=price__switcher-3] {
-  background-color: #fff;
-  border: 3px solid #000;
+
+#price__switcher-1:checked ~ .price__controls label[for="price__switcher-1"],
+#price__switcher-2:checked ~ .price__controls label[for="price__switcher-2"],
+#price__switcher-3:checked ~ .price__controls label[for="price__switcher-3"] {
+  background-color: #ffffff;
+  border: 3px solid #000000;
 }
 
 @media (min-width: 660px) {

@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
+
   @include container-mobile;
 
   &__download-button {
@@ -51,15 +52,15 @@
 }
 
 
-
 @media (min-width: 660px) {
   .app-stores {
     margin: 0;
     width: 300px;
     padding: 0;
+
     &__header {
       display: block;
-      color: #fff;
+      color: #ffffff;
       font-size: 40px;
       font-weight: 400;
       padding: 60px 36px 2px;
@@ -74,7 +75,7 @@
       margin-bottom: 17px;
     }
 
-    &__text{
+    &__text {
       font-size: 18px;
     }
   }
@@ -83,15 +84,18 @@
 @media (min-width: 1200px) {
   .app-stores {
     padding-bottom: 103px;
+
     &__header {
       font-size: 50px;
       padding: 68px 36px 6px;
       line-height: 60px;
     }
+
     &__download-button {
       font-size: 25px;
       margin-bottom: 70px;
     }
+
     &__icons {
       margin-bottom: 33px;
     }
