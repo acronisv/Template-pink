@@ -3,7 +3,7 @@ node_js:
   - '12'
 script:
   - npm run test
-  - gulp build
+  - npm run build
 deploy:
   provider: pages
   skip_cleanup: true
