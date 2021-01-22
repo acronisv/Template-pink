@@ -1,3 +1,2 @@
-# Шаблон Pink [![Build status][travis-image]][travis-url]
-[travis-image]: https://travis-ci.org/acronisv/Template-pink.svg?branch=master
-[travis-url]: https://travis-ci.org/acronisv/Template-pink
+## Шаблон Pink [![Build Status](https://travis-ci.org/acronisv/Template-pink.svg?branch=master)](https://travis-ci.org/acronisv/Template-pink)
+### [Github pages](https://acronisv.github.io/Template-pink/)
